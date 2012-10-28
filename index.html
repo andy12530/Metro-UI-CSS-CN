@@ -1,74 +1,187 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
+	<title>Metor UI CSS 中文版/中文翻译</title>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Metro-UI-CSS-CN : Metro-UI-CSS中文翻译版" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Metro-UI-CSS-CN</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/andy12530/Metro-UI-CSS-CN">View on GitHub</a>
-
-          <h1 id="project_title">Metro-UI-CSS-CN</h1>
-          <h2 id="project_tagline">Metro-UI-CSS中文翻译版</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/andy12530/Metro-UI-CSS-CN/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/andy12530/Metro-UI-CSS-CN/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Metro-UI-CSS-CN maintained by <a href="https://github.com/andy12530">andy12530</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+	<link href="css/modern.css" rel="stylesheet">
+    <link href="css/modern-responsive.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet" type="text/css">
     
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="js/accordion.js"></script>
+    <script type="text/javascript" src="js/buttonset.js"></script>
+    <script type="text/javascript" src="js/rating.js"></script>
+    <script type="text/javascript" src="js/title-image-slider.js"></script>
+    <script type="text/javascript" src="js/pagecontrol.js"></script>
+</head>
+<body>
+	<div class="page">
+		<div class="navigation-bar">
+			<div class="navigation-bar-inner">
+				<span class="menu-pull"></span>
+				<div class="brand">
+					<a href="index.html">
+						<span class="metro-ui-logo place-left"></span>
+					</a>
+					<a href="index.html">
+						<span class="name">
+							Metor UI CSS
+							<sup class="fg-color-yellow tertiary-info-secondary-text">v 0.1.4</sup>
+						</span>
+					</a>
+				</div>
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li data-role="dropdown" class="sub-menu">
+						<a href="#">框架</a>
+						<ul class="dropdown-menu">
+							<li><a href="scaffolding.html">全局样式</a></li>
+							<li><a href="scaffolding.html#layout">布局&模版</a></li>
+							<li><a href="scaffolding.html#grid">格栅系统</a></li>
+							<li class="divider"></li>
+							<li><a href="scaffolding.html#resonsive">响应式设计</a></li>
+						</ul>
+					</li>
+					<li data-role="dropdown" class="sub-menu">
+						<a href="#">基础 CSS</a>
+						<ul class="dropdown-menu">
+							<li><a href="basecss.html#typo">排版</a></li>
+							<li><a href="basecss.html#table">表格</a></li>
+							<li><a href="basecss.html#form">表单</a></li>
+							<li><a href="basecss.html#button">按钮</a></li>
+							<li><a href="basecss.html#images">图片</a></li>
+							<li class="divider"></li>
+							<li><a href="basecss.html#icons">Metro 图标</a></li>
+						</ul>
+					</li>
+					<li data-role="dropdown" class="sub-menu">
+						<a href="#">组件</a>
+						<ul class="dropdown-menu">
+							<li><a href="components.html">砖块</a></li>
+							<li><a href="components.html#menu">菜单 & 导航</a></li>
+							<li><a href="components.html#sidebar">侧边栏</a></li>
+							<li><a href="components.html#pagecontrol">标签页</a></li>
+							<li><a href="components.html#accordion">手风琴</a></li>
+							<li><a href="components.html#buttonset">按钮组</a></li>
+							<li><a href="components.html#rating">评分</a></li>
+							<li><a href="components.html#progress">进度条</a></li>
+							<li class=divider></li>
+							<li><a href="components.html#notice">提醒 & 回复</a></li>
+						</ul>
+					</li>
+					<li><a href="https://github.com/olton/Metro-UI-CSS" target="_blank">获取源码</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="page-region">
+			<div class="page-region-content">
+				<div class="grid">
+					<div class="row">
+						<div class="span8">
+							<div class="hero-unit">
+								<h1 class="fg-color-blueLight">
+									Metro UI CSS
+								</h1>
+								<h2>创建 Windows8 风格样式！</h2>
+								<p>Metro UI CSS 可以快速创建Windows 8风格的网站而无需其它工作。</p>
+								<h3>开始：引用modern.css</h3>
+								<p class="tertiary-info-text"><code>&lt link href="modern.css" rel="stylesheet" /&gt</code></p>
+							</div>							
+						</div>
+						<div class="span4">
+							<div class="span4 bg-color-red padding30 text-center place-left">
+								<h2 class="fg-color-white">作者广告位招租</h2>
+								<p class="fg-color-white">每天有1000+ 多的访问</p>
+							</div>
+							<div class="span2 bg-color-blue padding30">
+								<p class="fg-color-white">广告位置1</p>
+							</div>
+							<div class="span2 bg-color-green padding30">
+								<p class="fg-color-white">广告位置2</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-  </body>
+				<div class="grid">
+					<div class="row">
+						<div class="span4 bg-color-blue padding10">
+							<img src="images/simple.png" alt="" class="place-right">
+							<h2 class="fg-color-white">简约</h2>
+						</div>
+						<div class="span4 bg-color-green padding10">
+							<img src="images/grid.png" alt="" class="place-right">
+							<h2 class="fg-color-white">丰富</2>
+						</div>
+						<div class="span4 bg-color-yellow padding10">
+							<img src="images/responsive.png" alt="" class="place-right">
+							<h2 class="fg-color-white">响应式</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid">
+					<div class="row">
+						<div class="span4">
+							<img src="images/author.jpg" alt="这就是作者">
+							<div class="bg-color-grayDark padding10">
+								<p class="tertiary-info-secondary-text fg-color-white">嗯，没错，上面这就是作者。大叔级人物了。这是它的地址 <abbr title="乌克兰的帝都">Kiev</abbr>，<abbr title="欧洲的中部，是不是中国人民的老朋友？">乌克兰</abbr></p>
+							</div>
+						</div>
+						<div class="span4">
+							<h2>欢迎使用</h2>
+							<p>Metro UI CSS拥有完整的解决方案，可以创建 Windows 8 Metro 风格网站的前端框架</p>
+							<p>Metro UI CSS 包含两种开源许可证：<a href="https://github.com/olton/Metro-UI-CSS/blob/master/LICENSE">MIT</a> 和 
+								<a href="https://github.com/olton/Metro-UI-CSS/blob/master/LICENSE-FOR-COMMERCIAL-USE">Commercial</a>
+							</p>
+							<h2>Less</h2>
+							<p>Metro UI CSS 使用 LESS (一种CSS预处理器) 来构建， LESS是发明的。它让开发CSS变得更快，更简单，也更加有趣。</p>
+							<h2>支持的浏览器</h2>
+							<div class="browsers-icons clearfix">
+                                <img src="images/ie.png" title="Internet Explorer 9+">
+                                <img src="images/chrome.png" title="Google Chrome">
+                                <img src="images/firefox.png" title="Firefox">
+                                <img src="images/opera.png" title="Opera">
+                            </div>
+                            <br/>
+                            <p class="tertiary-info-secondary-text">所有的现代浏览器，IE9+，Firefox，Chrome，Safari，Opera等……</p>
+						</div>
+						<div class="span4">
+							<h2>GitHub 项目:</h2>
+							<table class="github-info" data-repo="olton/Metro-UI-CSS">
+                                <tbody>
+                                <tr>
+                                    <td>Starred:</td>
+                                    <td class="right"><span class="github-watchers">894</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Forks:</td>
+                                    <td class="right bg"><span class="github-forks">188</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding: 20px 0 0; border: 0;">
+                                        <button class="image-button bg-color-pink fg-color-white" onclick="document.location.href='https://github.com/olton/Metro-UI-CSS'">View on Github<img class="bg-color-red" src="images/github.png"></button>
+                                        <button class="image-button bg-color-darken fg-color-white" onclick="document.location.href='https://github.com/olton/Metro-UI-CSS/zipball/master'">Download<img class="bg-color-green" src="images/download-32.png"></button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bar">
+		    <div class="header-bar-inner bg-color-darken" style="padding: 10px 10px 5px;">
+		        <p class="tertiary-text fg-color-white">2012, Metro UI CSS © by <a class="fg-color-blueLight" href="mailto:sergey@pimenov.com.ua">Sergey Pimenov</a></p>
+		    </div>
+		</div>
+	</div>
+</body>
 </html>

@@ -1,0 +1,1274 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
+	<title>Metor UI CSS 中文版/中文翻译</title>
+
+	<link href="css/modern.css" rel="stylesheet">
+    <link href="css/modern-responsive.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet" type="text/css">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+    
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="js/accordion.js"></script>
+    <script type="text/javascript" src="js/buttonset.js"></script>
+    <script type="text/javascript" src="js/rating.js"></script>
+    <script type="text/javascript" src="js/title-image-slider.js"></script>
+    <script type="text/javascript" src="js/pagecontrol.js"></script>
+</head>
+<body>
+	<div class="page secondary">
+		<div class="navigation-bar">
+			<div class="navigation-bar-inner">
+				<span class="menu-pull"></span>
+				<div class="brand">
+					<a href="index.html">
+						<span class="metro-ui-logo place-left"></span>
+					</a>
+					<a href="index.html">
+						<span class="name">
+							Metor UI CSS
+							<sup class="fg-color-yellow tertiary-info-secondary-text">v 0.1.4</sup>
+						</span>
+					</a>
+				</div>
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li data-role="dropdown" class="sub-menu">
+						<a href="#">框架</a>
+						<ul class="dropdown-menu">
+							<li><a href="scaffolding.html">全局样式</a></li>
+							<li><a href="scaffolding.html#layout">布局&模版</a></li>
+							<li><a href="scaffolding.html#grid">格栅系统</a></li>
+							<li class="divider"></li>
+							<li><a href="scaffolding.html#resonsive">响应式设计</a></li>
+						</ul>
+					</li>
+					<li data-role="dropdown" class="sub-menu">
+						<a href="#">基础 CSS</a>
+						<ul class="dropdown-menu">
+							<li><a href="basecss.html#typo">排版</a></li>
+							<li><a href="basecss.html#table">表格</a></li>
+							<li><a href="basecss.html#form">表单</a></li>
+							<li><a href="basecss.html#button">按钮</a></li>
+							<li><a href="basecss.html#images">图片</a></li>
+							<li class="divider"></li>
+							<li><a href="basecss.html#icons">Metro 图标</a></li>
+						</ul>
+					</li>
+					<li data-role="dropdown" class="sub-menu">
+                        <a href="#">组件</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="components.html">砖块</a></li>
+                            <li><a href="components.html#menu">菜单 & 导航</a></li>
+                            <li><a href="components.html#sidebar">侧边栏</a></li>
+                            <li><a href="components.html#pagecontrol">标签页</a></li>
+                            <li><a href="components.html#accordion">手风琴</a></li>
+                            <li><a href="components.html#buttonset">按钮组</a></li>
+                            <li><a href="components.html#rating">评分</a></li>
+                            <li><a href="components.html#progress">进度条</a></li>
+                            <li class=divider></li>
+                            <li><a href="components.html#notice">提醒 & 回复</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://github.com/olton/Metro-UI-CSS" target="_blank">获取源码</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="page-header" id="typo">
+            <div class="page-header-content">
+                <h1>排版<small>标题、段落、列表、引用等</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+                <h1>H1. 标题 1</h1>
+                <h2>H2. 标题 2</h2>
+                <h3>H3. 标题 3</h3>
+                <h4>H4. 标题 4</h4>
+                <h5>H5. 标题 5</h5>
+                <h6>H6. 标题 6</h6>
+
+                <p>所有的HTML <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> 标签都是可用的</p>
+
+                <a class="navigation-text" href="#">导航</a>
+                <p class="tertiary-text">使用 navigation-text class 创建菜单 <code>&lt;a class="navigation-text" /&gt;</code></p>
+
+                <a href="#">链接</a>
+
+                <h2>默认段落文字</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;p&gt;</span><span class="pln">...</span><span class="tag">&lt;/p&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"body-text"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                <p>
+                    “每年这一天，世界上每个善良而诚实的人都会感到喜悦和光荣；自从世界上诞生了这个新的国家之后，民主和科学才在自由的新世界里种下了根基。一百六十七年，每 天每夜，从地球最黑暗的角落也可以望到自由神手里的火炬的光芒，——它使一切受难的人感到温暖，觉得世界还有希望。”——摘录自《新华日报》1943年7月4日社论。
+                </p>
+
+                <h2>二级文本</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"body-secondary-text"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/p&gt;</span></li></ol></pre>
+                <p class="body-secondary-text">
+                    “在中国，每个小学生都知道华盛顿的诚实，每个中学生都知道林肯的公正与怛恻，杰弗逊的博大与真诚。这些光辉的名字，在 我们国土上已经是一切美德的像征。……是他们，在我们没有民主传统的精神领域里，筑起了在今天使我们可以有效地抗拒了法西斯思想的长城。”——摘录自《新 华日报》1943年7月4日社论。
+                </p>
+
+                <h2>长文本</h2>
+                <small>使用这个class来显示大段文本，例如杂志或者书本中的内容。</small>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"long-text"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/p&gt;</span></li></ol></pre>
+                <p class="long-text">
+                    “我们共产党人现在所进行的工作，乃是华盛顿、杰佛逊、林肯等早已在美国进行过了的工作，它一定会 得到而且已经得到民主的美国的同情。美国正在用大力援助中国的抗日战争与民主运动，这是我们所感激的。在庆祝美国国庆的今天，我们相信，我们的奋斗只能得 到一个结果——胜利。”——摘录自《新华日报》1943年7月4日社论。
+                </p>
+
+                <h2>段落中使用缩进</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"indent"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/p&gt;</span></li></ol></pre>
+                <p class="indent">
+                    “马克思、恩格斯、列宁、斯大林，这些社会主义的伟大思想家 和行动家，对于美国的战斗民主主义及其在世界史上的进步作用，从来都是给予高度的评价的。美国的战斗民主主义有其光荣的历史传统。……列宁说，这是历史 上”最伟大的、真正解放和真正革命的战争“之一。——摘自《新华日报》1944年7月4日社论。
+                </p>
+
+                <p class="indent">
+                    是要彻底地、充分地、有效地实行普选制，使人民能在实际上，享有「普通」、「平等」的选举权、被选举权，则必须如中山先生所说，在选举以前，「保障各地方团体及人民有选举之自由，有提出议案及宣传、讨论之自由。」也就是「确定人民有集会、结社、言论、出版的完全自由权。」否则，所谓选举权，仍不过是纸上的权利罢了。
+                </p>
+
+                <h2>三级文本</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tertiary-text"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/p&gt;</span></li></ol></pre>
+                <p class="tertiary-text">
+                    由于各个国家的歷史發展、社会状况等具体条件的不同，他们各自所实行的民主政治，可能在形式和内容上，都存在着多少差异。但无论如何，它们之间有一个基本点是相同的，那就是政权为人民所握有，为人民所运用，而且为着人民的幸福和利益而服务。这样的政权必然尊重和保障人民的自.由权利；使失掉自由权利的人民重新获得自由权利；没有失掉自.由权利的充分享有自.由权利；特别是言论、出版、机会、结社，这些作为实行民主政治的基本条件的人民的最低限度的自由权利，是必须切实而充分地加以保障的。
+                </p>
+
+                <h2>次三级文本</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tertiary-secondary-text"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/p&gt;</span></li></ol></pre>
+                <p class="tertiary-secondary-text">
+                    二十年来，尤其是最近几年，我们天天见的是"只许州官放火，不许百姓点灯。"政府所颁布的法令，其是否为人民着想，姑置不论。最使人愤慨的是连这样的法，政府并未遵守。政府天天要人民守法，而政府自己却天天违法。这样的作风，和民主二字相距十万八千里！所以民主云云者是真是假，我们卑之无甚高论，第一步先看政府所发的那些空头民主支票究竟兑现了百分之几？如果已经写在白纸上的黑字尚不能兑现，还有什麼话可说?所以在政治协商会议开会以前，我们先要请把那些诺言来兑现，从这一点起码应做的小事上，望政府示人民以大信。
+                </p>
+
+                <div class="grid">
+                    <div class="row">
+                        <div class="span3">
+                            <h2>小字文字</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;small&gt;</span><span class="pln">...</span><span class="tag">&lt;/small&gt;</span></li></ol></pre>
+                            <p>
+                                <small>这是小字文本</small>.
+                            </p>
+                        </div>
+                        <div class="span4">
+                            <h2>粗体文本</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;strong&gt;</span><span class="pln">...</span><span class="tag">&lt;/strong&gt;</span></li></ol></pre>
+                            <p>
+                                <strong>这是粗体文本</strong>.
+                            </p>
+                        </div>
+                        <div class="span3">
+                            <h2>斜体文本</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;em&gt;</span><span class="pln">...</span><span class="tag">&lt;/em&gt;</span></li></ol></pre>
+                            <p>
+                                <em>这一段是斜体的。</em>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>缩略</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;abbr</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Title of abbreviation"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/abbr&gt;</span></li></ol></pre>
+                <p>中国共产党的缩写是 <abbr title="中国共产党">中共</abbr></p>
+                <p><abbr title="以美国为首的帝国主义" class="initialism">美帝</abbr> 是万恶的资本语义代表.</p>
+
+                <h2>地址</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;address&gt;</span></li><li class="L1"><span class="pln">        ...</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/address&gt;</span></li></ol></pre>
+                <address>
+                    <strong>中南海地址</strong><br>
+                    西长安街174号中南海新华门<br>
+                    北京市 邮编100017<br>
+                    <abbr title="电话">P:</abbr> (010) 110
+                </address>
+
+                <address>
+                    <strong>全名</strong><br>
+                    <a href="mailto:#">chamenhu@zhongnanhai.com.cn</a>
+                </address>
+
+                <h2>引用</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;blockquote&gt;</span></li><li class="L1"><span class="pln">        ...</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/blockquote&gt;</span></li></ol></pre>
+                <blockquote>
+                    <p>统治者于屠杀青年之余，还没有悔过的表示，但舆论界几乎一致主张政治应民主，特别對於青年，万不应以武力对付。…… 对付赤手空拳的学生，实在无动用武力之必要。</p>
+                </blockquote>
+
+                <h2>引用文字方向——自左</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;blockquote&gt;</span></li><li class="L1"><span class="pln">        ...</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;small&gt;</span><span class="pln">...</span><span class="tag">&lt;/small&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/blockquote&gt;</span></li></ol></pre>
+                <blockquote>
+                    <p>这些一切，只有证明全国人民及各民主党派对实施纲领的意见，首先是对人民自由的主张，是切实的，迫切需要实现的，万万「撤销」不得的。</p>
+                    <small>新华日报 <cite title="Source Title">1946年</cite></small>
+                </blockquote>
+
+                <h2>引用文字方向——自右</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;blockquote</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"place-right"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        ...</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;small&gt;</span><span class="pln">...</span><span class="tag">&lt;/small&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/blockquote&gt;</span></li></ol></pre>
+                <blockquote class="place-right">
+                    <p>中国要实行民主政治，必须「取资欧美」，但又要避免欧美民主政治的一些流弊，更驾而上之，这正是中山先生的伟大识见。</p>
+                    <small>新华日报 <cite title="Source Title">1944年</cite></small>
+                </blockquote>
+
+                <table class="bordered">
+                    <tbody><tr>
+                        <td style="vertical-align: top;">
+                            <h2>无序列表</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;ul&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+                            <ul>
+                                <li>Mysql 是个优秀的数据库</li>
+                                <li>DB2 是个优秀的数据库</li>
+                                <li>Oracle 是个优秀的数据库</li>
+                                <li>SQL Server 是个优秀的数据库</li>
+                                <li>NoSql 是一类NB的数据库
+                                    <ul>
+                                        <li>MongoDB 是其中一类</li>
+                                        <li>CouchDB 也是其中一类</li>
+                                        <li>Redias 也是其中一类</li>
+                                    </ul>
+                                </li>
+                                <li>NexusDB 是个优秀的数据库</li>
+                                <li>SQLite 是个优秀的数据库</li>
+                                <li>VistaDB 是个优秀的数据库</li>
+                            </ul>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <h2>有序列表</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;ol&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/ol&gt;</span></li></ol></pre>
+                            <ol>
+                                <li>Mysql 是个优秀的数据库</li>
+                                <li>DB2 是个优秀的数据库</li>
+                                <li>Oracle 是个优秀的数据库</li>
+                                <li>SQL Server 是个优秀的数据库</li>
+                                <li>NoSql 是一类NB的数据库</li>
+                            </ol>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <h2>无样式列表</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"unstyled"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+                            <ul class="unstyled">
+                                <li>Mysql 是个优秀的数据库</li>
+                                <li>DB2 是个优秀的数据库</li>
+                                <li>Oracle 是个优秀的数据库</li>
+                                <li>SQL Server 是个优秀的数据库</li>
+                                <li>NoSql 是一类NB的数据库
+                                    <ul>
+                                        <li>MongoDB 是其中一类</li>
+                                        <li>CouchDB 也是其中一类</li>
+                                        <li>Redias 也是其中一类</li>
+                                    </ul>
+                                </li>
+                                <li>NexusDB 是个优秀的数据库</li>
+                                <li>SQLite 是个优秀的数据库</li>
+                                <li>VistaDB 是个优秀的数据库</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody></table>
+        </div>
+
+
+        <div class="page-header" id="table">
+            <div class="page-header-content">
+                <h1>表格<small>展现格式固定的一类数据</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+                <div class="span10">
+                <h2>默认表格样式</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;table&gt;</span></li><li class="L1"><span class="pln">        ...</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th class="right">Time CP</th>
+                            <th class="right">Network</th>
+                            <th class="right">Traffic</th>
+                            <th class="right">Tiles update</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr><td>Bing</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Internet Explorer</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Chrome</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>News</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Weather</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Music</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                    </tbody>
+
+                    <tfoot></tfoot>
+                </table>
+
+                <h2>背景交替的表格样式</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"striped"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        ...</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th class="right">Time CP</th>
+                            <th class="right">Network</th>
+                            <th class="right">Traffic</th>
+                            <th class="right">Tiles update</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr><td>Bing</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Internet Explorer</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Chrome</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>News</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Weather</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Music</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                    </tbody>
+
+                    <tfoot></tfoot>
+                </table>
+
+                <h2>有边框的表格样式</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bordered"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        ...</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+                <table class="bordered">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th class="right">Time CP</th>
+                            <th class="right">Network</th>
+                            <th class="right">Traffic</th>
+                            <th class="right">Tiles update</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr><td>Bing</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Internet Explorer</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Chrome</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>News</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Weather</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Music</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                    </tbody>
+
+                    <tfoot></tfoot>
+                </table>
+
+                <h2>鼠标悬停的样式</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"hovered"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        ...</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/table&gt;</span></li></ol></pre>
+                <table class="hovered">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th class="right">Time CP</th>
+                            <th class="right">Network</th>
+                            <th class="right">Traffic</th>
+                            <th class="right">Tiles update</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr><td>Bing</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Internet Explorer</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Chrome</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>News</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Weather</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Music</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                    </tbody>
+
+                    <tfoot></tfoot>
+                </table>
+
+                <h2>其它表格选项</h2>
+                <p>每个class必须应用在 <code>&lt;tr&gt;</code> 标签上:</p>
+                <ul class="unstyled">
+                    <li class="fg-color-red">错误</li>
+                    <li class="fg-color-green">成功</li>
+                    <li class="fg-color-orange">警告</li>
+                    <li class="fg-color-blue">信息</li>
+                    <li>已经被选择的行</li>
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th class="right">Time CP</th>
+                            <th class="right">Network</th>
+                            <th class="right">Traffic</th>
+                            <th class="right">Tiles update</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="selected-row"><td>Bing</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr><td>Internet Explorer</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr class="success"><td>Chrome</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr class="error"><td>News</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr class="warning"><td>Weather</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                        <tr class="info"><td>Music</td><td class="right">0:00:01</td><td class="right">0,1 Mb</td><td class="right">0 Mb</td><td class="right">0,1 Mb</td></tr>
+                    </tbody>
+
+                    <tfoot></tfoot>
+                </table>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="page-header" id="form">
+            <div class="page-header-content">
+                <h1>表单<small>示例</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+                <div class="grid">
+                    <div class="row">
+                        <div class="span3">
+                            <h2>复选框</h2>
+                            <form>
+                                <label class="checkbox as-block" onclick="">
+                                    <input type="checkbox" checked="" value="1">
+                                    <span>已选中</span>
+                                </label>
+
+                                <label class="checkbox as-block" onclick="">
+                                    <input type="checkbox">
+                                    <span>未选中</span>
+                                </label>
+
+                                <label class="checkbox intermediate as-block" onclick="">
+                                    <input type="checkbox">
+                                    <span>可选</span>
+                                </label>
+
+                                <label class="checkbox as-block">
+                                    <input type="checkbox" disabled="">
+                                    <span>禁止且未选中</span>
+                                </label>
+
+                                <label class="checkbox as-block">
+                                    <input type="checkbox" disabled="" checked="">
+                                    <span>禁止且已选中</span>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="span3">
+                            <h2>单选框</h2>
+                            <form>
+                                <label class="radiobox as-block" onclick="">
+                                    <input type="radio" name="r1" checked="">
+                                    <span>选中</span>
+                                </label>
+                                <label class="radiobox as-block" onclick="">
+                                    <input type="radio" name="r1">
+                                    <span>未选中</span>
+                                </label>
+                                <label class="radiobox as-block" onclick="">
+                                    <input type="radio" name="r1" disabled="">
+                                    <span>禁止且未选中</span>
+                                </label>
+                                <label class="radiobox as-block" onclick="">
+                                    <input type="radio" name="r2" disabled="" checked="">
+                                    <span>禁止且已选中</span>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="span3">
+                            <h2>切换控制</h2>
+                            <form>
+                                <label class="switch as-block" onclick="">
+                                    <input type="checkbox" checked="">
+                                    <span>打开</span>
+                                </label>
+                                <label class="switch as-block" onclick="">
+                                    <input type="checkbox">
+                                    <span>关闭</span>
+                                </label>
+                                <label class="switch as-block" onclick="">
+                                    <input type="checkbox" disabled="">
+                                    <span>禁止且已关闭</span>
+                                </label>
+                                <label class="switch as-block" onclick="">
+                                    <input type="checkbox" disabled="" checked="">
+                                    <span>禁止且已打开</span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span10">
+
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;span&gt;</span><span class="pln">CheckBox Caption</span><span class="tag">&lt;/span&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/label&gt;</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"radiobox"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;span&gt;</span><span class="pln">CheckBox Caption</span><span class="tag">&lt;/span&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;/label&gt;</span></li><li class="L9"><span class="pln">&nbsp;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"switch"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;span&gt;</span><span class="pln">CheckBox Caption</span><span class="tag">&lt;/span&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/label&gt;</span></li></ol></pre>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span10">
+                            <h2>按钮</h2>
+                            <form>
+                                <input type="button" value="按钮">
+                                <input type="submit" value="提交">
+                                <input type="reset" value="重置">
+                                <input type="button" value="按钮" disabled="">
+                            </form>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"按钮"</span><span class="tag">/&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Submit"</span><span class="tag">/&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"reset"</span><span class="pln">  </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Reset"</span><span class="tag">/&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"button"</span><span class="pln"> </span><span class="atn">disabled</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"按钮"</span><span class="tag">/&gt;</span></li></ol></pre>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span5">
+                            <h2>文本框</h2>
+                            <form>
+                                <div class="input-control text">
+                                    <input type="text">
+                                    <span class="helper"></span>
+                                </div>
+                                <div class="input-control text">
+                                    <input type="text" placeholder="请输入文本">
+                                    <span class="helper"></span>
+                                </div>
+                                <div class="input-control text disabled">
+                                    <input type="text" disabled="" value="禁止输入">
+                                    <span class="helper"></span>
+                                </div>
+                                <div class="input-control text disabled">
+                                    <input type="text" value="辅助输入">
+                                </div>
+                            </form>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-control text"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text[email, phone, url]"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"helper"</span><span class="tag">&gt;&lt;/span&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                        </div>
+
+                        <div class="span5">
+                            <h2>密码框</h2>
+                            <form>
+                                <div class="input-control password">
+                                    <input type="password" autofocus="">
+                                    <span class="helper"></span>
+                                </div>
+                                <div class="input-control password">
+                                    <input type="password" placeholder="输入密码">
+                                    <span class="helper"></span>
+                                </div>
+                                <div class="input-control password">
+                                    <input type="password" disabled="">
+                                    <span class="helper"></span>
+                                </div>
+                                <div class="input-control password">
+                                    <input type="password">
+                                </div>
+                            </form>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-control password"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"password"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"helper"</span><span class="tag">&gt;&lt;/span&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span10">
+                            <div class="input-control text">
+                                <input type="phone" placeholder="输入手机号" required="required">
+                                <span class="helper"></span>
+                            </div>
+                            <div class="input-control text">
+                                <input type="email" placeholder="输入Email" required="required">
+                                <span class="helper"></span>
+                            </div>
+                            <div class="input-control text">
+                                <input type="url" placeholder="输入url" required="required">
+                                <span class="helper"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span10">
+                            <h2>选择</h2>
+                            <form>
+                                <div class="input-control select">
+                                    <select>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                        <option value="4">Option 4</option>
+                                        <option value="5">Option 5</option>
+                                    </select>
+                                </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-control select"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;select&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;option&gt;</span><span class="pln">...</span><span class="tag">&lt;/option&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;/select&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                                <div class="input-control select">
+                                    <select multiple="6">
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                        <option value="4">Option 4</option>
+                                        <option value="5">Option 5</option>
+                                    </select>
+                                </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-control select"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;select</span><span class="pln"> </span><span class="atn">multiple</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;option&gt;</span><span class="pln">...</span><span class="tag">&lt;/option&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;/select&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                                <h2>文本域</h2>
+                                <div class="input-control textarea">
+                                    <textarea></textarea>
+                                </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-control textarea"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;textarea&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;/textarea&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="span10">
+                            <h2>表单标记 (Fieldset)</h2>
+                            <form>
+                                <fieldset>
+                                    <legend>说明 (Legend)</legend>
+
+                                    <p class="tertiary-info-secondary-text">
+                                    	曾經有一種看法，以為民主可以等人家給與。以為天下有好心人把民主給人民，於是就有了等待這種"民主"，正如等待二百萬元的頭獎一樣。但是中外古今的歷史都證明了，民主是從人民的爭取和斗爭中得到的成果，決不是一種可以幸得的禮物。    
+                                    </p>
+
+                                </fieldset>
+                            </form>
+                            <br>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;fieldset&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;legend&gt;</span><span class="pln">...</span><span class="tag">&lt;/legend&gt;</span></li><li class="L2"><span class="pln">        ...</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/fieldset&gt;</span></li></ol></pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span10">
+                            <h2>input 使用 spanN class</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-control text spanN"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"helper"</span><span class="tag">&gt;&lt;/span&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <form>
+                                <div class="input-control text span1 as-block">
+                                    <input type="text" placeholder="s1">
+                                    <span class="helper"></span>
+                                </div>
+
+                                <div class="input-control text span2 as-block">
+                                    <input type="text" placeholder="span2">
+                                    <span class="helper"></span>
+                                </div>
+
+                                <div class="input-control text span3 as-block">
+                                    <input type="text" placeholder="span3">
+                                    <span class="helper"></span>
+                                </div>
+
+                                <div class="input-control text span4 as-block">
+                                    <input type="text" placeholder="span4">
+                                    <span class="helper"></span>
+                                </div>
+
+                                <div class="input-control text span5 as-block">
+                                    <input type="text" placeholder="span5">
+                                    <span class="helper"></span>
+                                </div>
+
+                                <div class="input-control text span6 as-block">
+                                    <input type="text" placeholder="span6">
+                                    <span class="helper"></span>
+                                </div>
+
+                                <div class="input-control text span7 as-block">
+                                    <input type="text" placeholder="span7">
+                                    <span class="helper"></span>
+                                </div>
+
+                                <div class="input-control text span8 as-block">
+                                    <input type="text" placeholder="span8">
+                                    <span class="helper"></span>
+                                </div>
+
+                                <div class="input-control text span9 as-block">
+                                    <input type="text" placeholder="span9">
+                                    <span class="helper"></span>
+                                </div>
+
+                                <div class="input-control text span10 as-block">
+                                    <input type="text" placeholder="span10">
+                                    <span class="helper"></span>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="row">
+                                            </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="page-header" id="buttons">
+            <div class="page-header-content">
+                <h1>按钮<small>示例</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+                <div class="grid">
+                    <div class="row">
+                        <div class="span5">
+                            <h2>推送按钮</h2>
+
+                            <button class="standart">按钮</button>
+                            <button class="standart default">按钮</button>
+                            <button class="standart" disabled="">按钮</button>
+
+                            <p><small>You can also change the color of the button by <br>adding bg-color-* class. Example:</small></p>
+
+                            <button class="bg-color-orange">按钮</button>
+                            <button class="bg-color-red">按钮</button>
+                            <button class="bg-color-green">按钮</button>
+                            <button class="bg-color-purple">按钮</button>
+                            <button class="bg-color-blue">按钮</button>
+                            <button class="bg-color-grayDark">按钮</button>
+
+                            <p>
+                                <small>You can use tag <code>&lt;a&gt;</code> for creating button with class <code>.button</code></small>
+                            </p>
+
+                            <a class="button">按钮</a>
+                            <a class="button default">按钮</a>
+                            <a class="button disabled">按钮</a>
+                        </div>
+                        <div class="span5">
+                            <h2>命令按钮</h2>
+                            <button class="command-button">Yes, share and connect<small>Use this option for home or work</small></button>
+                            <button class="command-button default">Yes, share and connect<small>Use this option for home or work</small></button>
+                            <button class="command-button">Tertiary command, do not press :)</button>
+                            <button class="command-button" disabled="">This is disabled command button</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span10">
+
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln">按钮</span><span class="tag">&lt;/button&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"default"</span><span class="tag">&gt;</span><span class="pln">按钮</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">disabled</span><span class="tag">&gt;</span><span class="pln">按钮</span><span class="tag">&lt;/button&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button"</span><span class="tag">&gt;</span><span class="pln">按钮</span><span class="tag">&lt;/a&gt;</span></li></ol></pre>
+
+
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"command-button"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        Yes, share and connect</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;small&gt;</span><span class="pln">Use this option for home or work</span><span class="tag">&lt;/small&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/button&gt;</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"command-button default"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/button&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"command-button"</span><span class="pln"> </span><span class="atn">disabled</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/button&gt;</span></li></ol></pre>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span10">
+                            <h2>工具栏</h2>
+                            <div class="toolbar">
+                                <button><i class="icon-about"></i></button>
+                                <button><i class="icon-bookmark"></i></button>
+                                <button><i class="icon-vibrate"></i></button>
+                                <button><i class="icon-navigation-down"></i></button>
+                                <button><i class="icon-mail"></i></button>
+                            </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L2"><span class="pln">        ...</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <h2>工具栏按钮组</h2>
+                            <div class="toolbar">
+                                <div class="toolbar-group">
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                                <div class="toolbar-group">
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+                                <div class="toolbar-group">
+                                    <button class="big"></button>
+                                    <button class="big"></button>
+                                    <button class="big"></button>
+                                </div>
+                            </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar-group"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L3"><span class="pln">            ...</span></li><li class="L4"><span class="pln">            </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="pln">        ...</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar-group"</span><span class="tag">&gt;</span></li><li class="L8"><span class="pln">            </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L9"><span class="pln">            ...</span></li><li class="L0"><span class="pln">            </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                            <h2>垂直工具栏</h2>
+                            <div class="clearfix">
+                                <div class="toolbar-vertical">
+                                    <button>1</button>
+                                    <button>2</button>
+                                    <button>3</button>
+                                </div>
+                            </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar-vertical"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L2"><span class="pln">        ...</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <h2>垂直工具组</h2>
+                            <div class="clearfix">
+                                <div class="toolbar-vertical">
+                                    <div class="toolbar-group">
+                                        <button>1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+                                    </div>
+                                    <div class="toolbar-group">
+                                        <button>1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+                                    </div>
+                                </div>
+                            </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar-vertical"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar-group"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L3"><span class="pln">            ...</span></li><li class="L4"><span class="pln">            </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="pln">        ...</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"toolbar-group"</span><span class="tag">&gt;</span></li><li class="L8"><span class="pln">            </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L9"><span class="pln">            ...</span></li><li class="L0"><span class="pln">            </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span10">
+                            <h2>图片按钮</h2>
+                            <button class="image-button bg-color-darken fg-color-white">下载源码<img class="bg-color-green" src="images/download-32.png"></button>
+                            <button class="image-button bg-color-pink fg-color-white">保护伞软件公司<img class="bg-color-red" src="images/armor.png"></button>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-button"</span><span class="tag">&gt;</span><span class="pln"> Caption </span><span class="tag">&lt;img/&gt;</span><span class="pln"> </span><span class="tag">&lt;/button&gt;</span></li><li class="L1"><span class="pln">    ===================</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-button bg-color-darken fg-color-white"</span><span class="tag">&gt;</span><span class="pln">Download</span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"images/down.png"</span><span class="tag">/&gt;&lt;/button&gt;</span></li></ol></pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span10">
+                            <h2>Any size of button</h2>
+                            <div>
+                                <button class="mini"><i class="icon-adobe"></i>迷你按钮</button>
+                                <button class="mini"><i class="icon-adobe right"></i>迷你按钮</button>
+                                <button class="mini">迷你按钮</button>
+                            </div>
+                            <div>
+                                <button><i class="icon-adobe"></i>默认</button>
+                                <button><i class="icon-adobe right"></i>默认</button>
+                                <button>默认</button>
+                            </div>
+                            <div>
+                                <button class="big">大按钮</button>
+                                <button class="big"><i class="icon-mail"></i>大按钮</button>
+                                <button class="big"><i class="icon-mail right"></i>大按钮</button>
+                            </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"mini"</span><span class="tag">&gt;</span><span class="pln"> Caption </span><span class="tag">&lt;/button&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;button&gt;</span><span class="pln"> Caption </span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"big"</span><span class="tag">&gt;</span><span class="pln"> Caption </span><span class="tag">&lt;/button&gt;</span></li></ol></pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="span10">
+                            <h2>图标按钮</h2>
+                            <button><i class="icon-bookmark"></i>按钮</button>
+                            <button><i class="icon-bookmark right"></i>按钮</button>
+                            <button class="default"><i class="icon-bookmark white"></i>按钮</button>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-*"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">Caption</span><span class="tag">&lt;/button&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-* right"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">Caption</span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;button&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-* white"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">Caption</span><span class="tag">&lt;/button&gt;</span></li></ol></pre>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="page-header" id="images">
+            <div class="page-header-content">
+                <h1>图片<small>示例</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+
+                <h2>图片容器</h2>
+                <div class="clearfix">
+                    <div class="image-container place-left">
+                        <img src="images/1.jpg">
+                        <div class="overlay">
+                           没有共产党，就没有新中国！
+                           传说这是史上最好的广告词
+                        </div>
+                    </div>
+                    <div class="image-container light place-left">
+                        <img src="images/2.jpg">
+                        <div class="overlay">
+                           主席孙子杀一头，足够全社吃半年！
+                           主席孙子杀一头，足够全社吃半年！
+                        </div>
+                    </div>
+                    <div class="image-container bg-color-blue place-left">
+                        <img src="images/4.jpg">
+                        <div class="overlay">
+                            电力一组李小玲，拼实力，不靠爹！
+                            电力一组李小玲，拼实力，不靠爹！
+                        </div>
+                    </div>
+                </div>
+
+<pre class="prettyprint linenums span9"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-container"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"overlay"</span><span class="tag">&gt;</span><span class="pln"> overlay text </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-container light"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"overlay"</span><span class="tag">&gt;</span><span class="pln"> overlay text </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">&nbsp;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-container bg-color-blue"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"overlay"</span><span class="tag">&gt;</span><span class="pln"> overlay text </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                <h2>图片集合 (16x9)</h2>
+                <div class="image-collection">
+                    <div class="selected"><img src="images/1.jpg" alt=""></div>
+                    <div><span class="top-left tertiary-info-text">This image with overlay</span><img src="images/2.jpg" alt=""><div class="overlay">主席孙子杀一头，足够全社吃半年！主席孙子杀一头，足够全社吃半年！</div></div>
+                    <div><img src="images/3.jpg" alt=""></div>
+                    <div></div>
+                </div>
+
+<pre class="prettyprint linenums span9"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-collection"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div&gt;&lt;img</span><span class="pln"> </span><span class="tag">/&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">        ...</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;div&gt;&lt;img</span><span class="pln"> </span><span class="tag">/&gt;&lt;/div&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                <h2>简单的图片集合 (4x3)</h2>
+                <div class="image-collection p4x3">
+                    <div class="selected"><img src="images/1.jpg" alt=""></div>
+                    <div><span class="top-left tertiary-info-text">This image with overlay</span><img src="images/2.jpg" alt=""><div class="overlay">主席孙子杀一头，足够全社吃半年！主席孙子杀一头，足够全社吃半年！</div></div>
+                    <div><img src="images/3.jpg" alt=""></div>
+                    <div></div>
+                </div>
+
+<pre class="prettyprint linenums span9"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-collection p4x3"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div&gt;&lt;img</span><span class="pln"> </span><span class="tag">/&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                <h2>选中集合中的图片</h2>
+<pre class="prettyprint linenums span9"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-collection"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"selected"</span><span class="tag">&gt;&lt;img</span><span class="pln"> </span><span class="tag">/&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                <h2>有遮罩的图片</h2>
+<pre class="prettyprint linenums span9"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-collection"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L3"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"overlay"</span><span class="tag">&gt;</span><span class="pln">Sample text</span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                <h2>空图片</h2>
+<pre class="prettyprint linenums span9"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"image-collection"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+
+
+            </div>
+        </div>
+
+
+        <div class="page-header" id="icons">
+            <div class="page-header-content">
+                <h1>图标<small>示例</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+                <div class="span10">
+                    <h2>图标 glyphs</h2>
+                    287 个 sprite 图标，包括黑色 (默认) 和白色, 由 <a href="http://www.syncfusion.com/downloads/metrostudio">Syncfusion Metro Studio</a> 提供。
+
+                    <h3>应用程序图标</h3>
+                    <div class="grid">
+                        <div class="row">
+                            <div class="span5">
+                                <ol class="unstyled sprite-details">
+                                    <li><i class="icon-about place-left"></i>icon-about</li>
+                                    <li><i class="icon-access place-left"></i>icon-access</li>
+                                    <li><i class="icon-add place-left"></i>icon-add</li>
+                                    <li><i class="icon-adobe place-left"></i>icon-adobe</li>
+                                    <li><i class="icon-arrowhead-down place-left"></i>icon-arrowhead-down</li>
+                                    <li><i class="icon-arrowhead-left place-left"></i>icon-arrowhead-left</li>
+                                    <li><i class="icon-arrowhead-right place-left"></i>icon-arrowhead-right</li>
+                                    <li><i class="icon-arrowhead-up place-left"></i>icon-arrowhead-up</li>
+                                    <li><i class="icon-bookmark-preferences place-left"></i>icon-bookmark-preferences</li>
+                                    <li><i class="icon-bookmark-add place-left"></i>icon-bookmark-add</li>
+                                    <li><i class="icon-bookmark-delete place-left"></i>icon-bookmark-delete</li>
+                                    <li><i class="icon-bookmark-down place-left"></i>icon-bookmark-down</li>
+                                    <li><i class="icon-bookmark-new place-left"></i>icon-bookmark-new</li>
+                                    <li><i class="icon-bookmark-up place-left"></i>icon-bookmark-up</li>
+                                    <li><i class="icon-brightness place-left"></i>icon-brightness</li>
+                                    <li><i class="icon-ccleaner place-left"></i>icon-ccleaner</li>
+                                    <li><i class="icon-cd-play place-left"></i>icon-cd-play</li>
+                                    <li><i class="icon-cd-music place-left"></i>icon-cd-music</li>
+                                    <li><i class="icon-cd-new place-left"></i>icon-cd-new</li>
+                                    <li><i class="icon-cd-pause place-left"></i>icon-cd-pause</li>
+                                    <li><i class="icon-cd-software place-left"></i>icon-cd-software</li>
+                                    <li><i class="icon-cd-stop place-left"></i>icon-cd-stop</li>
+                                    <li><i class="icon-clipboard place-left"></i>icon-clipboard</li>
+                                    <li><i class="icon-clipboard-next place-left"></i>icon-clipboard-next</li>
+                                    <li><i class="icon-clipboard-next-down place-left"></i>icon-clipboard-next-down</li>
+                                    <li><i class="icon-cluster-group place-left"></i>icon-cluster-group</li>
+                                    <li><i class="icon-collapse place-left"></i>icon-collapse</li>
+                                    <li><i class="icon-conference-call place-left"></i>icon-conference-call</li>
+                                    <li><i class="icon-connectivity-error place-left"></i>icon-connectivity-error</li>
+                                    <li><i class="icon-contrast place-left"></i>icon-contrast</li>
+                                    <li><i class="icon-cube place-left"></i>icon-cube</li>
+                                    <li><i class="icon-curly-brackets place-left"></i>icon-curly-brackets</li>
+                                    <li><i class="icon-defragmentation place-left"></i>icon-defragmentation</li>
+                                    <li><i class="icon-desktop place-left"></i>icon-desktop</li>
+                                    <li><i class="icon-details-view place-left"></i>icon-details-view</li>
+                                    <li><i class="icon-disc-error place-left"></i>icon-disc-error</li>
+                                    <li><i class="icon-disc-info place-left"></i>icon-disc-info</li>
+                                    <li><i class="icon-disc-valid place-left"></i>icon-disc-valid</li>
+                                    <li><i class="icon-disc-warning place-left"></i>icon-disc-warning</li>
+                                    <li><i class="icon-document place-left"></i>icon-document</li>
+                                    <li><i class="icon-document-add place-left"></i>icon-document-add</li>
+                                    <li><i class="icon-document-check place-left"></i>icon-document-check</li>
+                                    <li><i class="icon-document-delete place-left"></i>icon-document-delete</li>
+                                    <li><i class="icon-document-download place-left"></i>icon-document-download</li>
+                                    <li><i class="icon-document-edit place-left"></i>icon-document-edit</li>
+                                    <li><i class="icon-document-error place-left"></i>icon-document-error</li>
+                                    <li><i class="icon-document-exchange place-left"></i>icon-document-exchange</li>
+                                    <li><i class="icon-document-music place-left"></i>icon-document-music</li>
+                                    <li><i class="icon-document-new place-left"></i>icon-document-new</li>
+                                    <li><i class="icon-documents place-left"></i>icon-documents</li>
+                                    <li><i class="icon-document-settings place-left"></i>icon-document-settings</li>
+                                    <li><i class="icon-document-share place-left"></i>icon-document-share</li>
+                                    <li><i class="icon-document-warning place-left"></i>icon-document-warning</li>
+                                    <li><i class="icon-document-zoom-in place-left"></i>icon-document-zoom-in</li>
+                                    <li><i class="icon-document-zoom-out place-left"></i>icon-document-zoom-out</li>
+                                    <li><i class="icon-door place-left"></i>icon-door</li>
+                                    <li><i class="icon-double-quotation place-left"></i>icon-double-quotation</li>
+                                    <li><i class="icon-download-error place-left"></i>icon-download-error</li>
+                                    <li><i class="icon-drives-network place-left"></i>icon-drives-network</li>
+                                    <li><i class="icon-edit place-left"></i>icon-edit</li>
+                                    <li><i class="icon-exchange place-left"></i>icon-exchange</li>
+                                    <li><i class="icon-expand place-left"></i>icon-expand</li>
+                                    <li><i class="icon-export place-left"></i>icon-export</li>
+                                    <li><i class="icon-eye-drop place-left"></i>icon-eye-drop</li>
+                                    <li><i class="icon-find place-left"></i>icon-find</li>
+                                    <li><i class="icon-find-and-replace place-left"></i>icon-find-and-replace</li>
+                                    <li><i class="icon-find-previous place-left"></i>icon-find-previous</li>
+                                    <li><i class="icon-fit-to-size place-left"></i>icon-fit-to-size</li>
+                                    <li><i class="icon-folder-add place-left"></i>icon-folder-add</li>
+                                    <li><i class="icon-folder-connect place-left"></i>icon-folder-connect</li>
+                                    <li><i class="icon-folder-cube place-left"></i>icon-folder-cube</li>
+                                    <li><i class="icon-folder-delete place-left"></i>icon-folder-delete</li>
+                                    <li><i class="icon-folder-edit place-left"></i>icon-folder-edit</li>
+                                    <li><i class="icon-folder-information place-left"></i>icon-folder-information</li>
+                                    <li><i class="icon-folder-movie place-left"></i>icon-folder-movie</li>
+                                    <li><i class="icon-folder-music place-left"></i>icon-folder-music</li>
+                                    <li><i class="icon-folder-new place-left"></i>icon-folder-new</li>
+                                    <li><i class="icon-garbage place-left"></i>icon-garbage</li>
+                                    <li><i class="icon-garbage-empty place-left"></i>icon-garbage-empty</li>
+                                    <li><i class="icon-garbage-full place-left"></i>icon-garbage-full</li>
+                                </ol>
+                            </div>
+                            <div class="span5">
+                                <ol class="unstyled sprite-details">
+                                    <li><i class="icon-hash place-left"></i>icon-hash</li>
+                                    <li><i class="icon-history place-left"></i>icon-history</li>
+                                    <li><i class="icon-import place-left"></i>icon-import</li>
+                                    <li><i class="icon-lambda place-left"></i>icon-lambda</li>
+                                    <li><i class="icon-landscape place-left"></i>icon-landscape</li>
+                                    <li><i class="icon-list-view place-left"></i>icon-list-view</li>
+                                    <li><i class="icon-login-arrow place-left"></i>icon-login-arrow</li>
+                                    <li><i class="icon-login-door place-left"></i>icon-login-door</li>
+                                    <li><i class="icon-login-user place-left"></i>icon-login-user</li>
+                                    <li><i class="icon-login1 place-left"></i>icon-login1</li>
+                                    <li><i class="icon-login2 place-left"></i>icon-login2</li>
+                                    <li><i class="icon-login3 place-left"></i>icon-login3</li>
+                                    <li><i class="icon-media-back place-left"></i>icon-media-back</li>
+                                    <li><i class="icon-media-end place-left"></i>icon-media-end</li>
+                                    <li><i class="icon-media-fast-forward place-left"></i>icon-media-fast-forward</li>
+                                    <li><i class="icon-media-pause place-left"></i>icon-media-pause</li>
+                                    <li><i class="icon-media-play place-left"></i>icon-media-play</li>
+                                    <li><i class="icon-media-start place-left"></i>icon-media-start</li>
+                                    <li><i class="icon-media-stop place-left"></i>icon-media-stop</li>
+                                    <li><i class="icon-thumbnail-view place-left"></i>icon-thumbnail-view</li>
+                                    <li><i class="icon-merge place-left"></i>icon-merge</li>
+                                    <li><i class="icon-movie-folder1 place-left"></i>icon-movie-folder1</li>
+                                    <li><i class="icon-movie-folder place-left"></i>icon-movie-folder</li>
+                                    <li><i class="icon-music-folder2 place-left"></i>icon-music-folder2</li>
+                                    <li><i class="icon-navigation-down place-left"></i>icon-navigation-down</li>
+                                    <li><i class="icon-navigation-down-right place-left"></i>icon-navigation-down-right</li>
+                                    <li><i class="icon-navigation-right place-left"></i>icon-navigation-right</li>
+                                    <li><i class="icon-navigation-up-left place-left"></i>icon-navigation-up-left</li>
+                                    <li><i class="icon-open-in-new-window place-left"></i>icon-open-in-new-window</li>
+                                    <li><i class="icon-parenthesis place-left"></i>icon-parenthesis</li>
+                                    <li><i class="icon-paste place-left"></i>icon-paste</li>
+                                    <li><i class="icon-picture-folder place-left"></i>icon-picture-folder</li>
+                                    <li><i class="icon-portrait place-left"></i>icon-portrait</li>
+                                    <li><i class="icon-redo place-left"></i>icon-redo</li>
+                                    <li><i class="icon-refresh place-left"></i>icon-refresh</li>
+                                    <li><i class="icon-rss-feeds place-left"></i>icon-rss-feeds</li>
+                                    <li><i class="icon-scale-to-fit place-left"></i>icon-scale-to-fit</li>
+                                    <li><i class="icon-semicolon place-left"></i>icon-semicolon</li>
+                                    <li><i class="icon-sharpen place-left"></i>icon-sharpen</li>
+                                    <li><i class="icon-single-quotation place-left"></i>icon-single-quotation</li>
+                                    <li><i class="icon-skew place-left"></i>icon-skew</li>
+                                    <li><i class="icon-slash place-left"></i>icon-slash</li>
+                                    <li><i class="icon-small-thumbnail-view place-left"></i>icon-small-thumbnail-view</li>
+                                    <li><i class="icon-split place-left"></i>icon-split</li>
+                                    <li><i class="icon-square-braces place-left"></i>icon-square-braces</li>
+                                    <li><i class="icon-submit place-left"></i>icon-submit</li>
+                                    <li><i class="icon-submit-arrow place-left"></i>icon-submit-arrow</li>
+                                    <li><i class="icon-synchronize place-left"></i>icon-synchronize</li>
+                                    <li><i class="icon-text place-left"></i>icon-text</li>
+                                    <li><i class="icon-text-braille place-left"></i>icon-text-braille</li>
+                                    <li><i class="icon-text-italic place-left"></i>icon-text-italic</li>
+                                    <li><i class="icon-text-bold place-left"></i>icon-text-bold</li>
+                                    <li><i class="icon-text-center-align place-left"></i>icon-text-center-align</li>
+                                    <li><i class="icon-text-edit place-left"></i>icon-text-edit</li>
+                                    <li><i class="icon-text-justify-align place-left"></i>icon-text-justify-align</li>
+                                    <li><i class="icon-text-left-align place-left"></i>icon-text-left-align</li>
+                                    <li><i class="icon-text-mark place-left"></i>icon-text-mark</li>
+                                    <li><i class="icon-text-normal place-left"></i>icon-text-normal</li>
+                                    <li><i class="icon-text-protect place-left"></i>icon-text-protect</li>
+                                    <li><i class="icon-text-read place-left"></i>icon-text-read</li>
+                                    <li><i class="icon-text-right-align place-left"></i>icon-text-right-align</li>
+                                    <li><i class="icon-tile-view place-left"></i>icon-tile-view</li>
+                                    <li><i class="icon-torrent place-left"></i>icon-torrent</li>
+                                    <li><i class="icon-undo place-left"></i>icon-undo</li>
+                                    <li><i class="icon-visual-studio place-left"></i>icon-visual-studio</li>
+                                    <li><i class="icon-vlc-player place-left"></i>icon-vlc-player</li>
+                                    <li><i class="icon-voice-mail place-left"></i>icon-voice-mail</li>
+                                    <li><i class="icon-warning place-left"></i>icon-warning</li>
+                                    <li><i class="icon-warning-shield place-left"></i>icon-warning-shield</li>
+                                    <li><i class="icon-winamp place-left"></i>icon-winamp</li>
+                                    <li><i class="icon-window place-left"></i>icon-window</li>
+                                    <li><i class="icon-window-delete place-left"></i>icon-window-delete</li>
+                                    <li><i class="icon-window-earth place-left"></i>icon-window-earth</li>
+                                    <li><i class="icon-window-environment place-left"></i>icon-window-environment</li>
+                                    <li><i class="icon-window-horizontal-split place-left"></i>icon-window-horizontal-split</li>
+                                    <li><i class="icon-window-information place-left"></i>icon-window-information</li>
+                                    <li><i class="icon-window-new place-left"></i>icon-window-new</li>
+                                    <li><i class="icon-windows place-left"></i>icon-windows</li>
+                                    <li><i class="icon-windows-8-login place-left"></i>icon-windows-8-login</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>手机图标</h3>
+                    <div class="grid">
+                        <div class="row">
+                            <div class="span5">
+                                <ol class="unstyled sprite-details">
+                                    <li><i class="icon-add-1 place-left"></i>icon-add-1</li>
+                                    <li><i class="icon-alarm-clock place-left"></i>icon-alarm-clock</li>
+                                    <li><i class="icon-archive place-left"></i>icon-archive</li>
+                                    <li><i class="icon-audio-disk place-left"></i>icon-audio-disk</li>
+                                    <li><i class="icon-battery-low place-left"></i>icon-battery-low</li>
+                                    <li><i class="icon-bin place-left"></i>icon-bin</li>
+                                    <li><i class="icon-bluetooth place-left"></i>icon-bluetooth</li>
+                                    <li><i class="icon-board-pin place-left"></i>icon-board-pin</li>
+                                    <li><i class="icon-bookmark place-left"></i>icon-bookmark</li>
+                                    <li><i class="icon-burn-disk place-left"></i>icon-burn-disk</li>
+                                    <li><i class="icon-camera2 place-left"></i>icon-camera2</li>
+                                    <li><i class="icon-cancel place-left"></i>icon-cancel</li>
+                                    <li><i class="icon-car place-left"></i>icon-car</li>
+                                    <li><i class="icon-chat place-left"></i>icon-chat</li>
+                                    <li><i class="icon-check-box place-left"></i>icon-check-box</li>
+                                    <li><i class="icon-close place-left"></i>icon-close</li>
+                                    <li><i class="icon-cloud-cyclone place-left"></i>icon-cloud-cyclone</li>
+                                    <li><i class="icon-cloud-overcast place-left"></i>icon-cloud-overcast</li>
+                                    <li><i class="icon-cloud-rain place-left"></i>icon-cloud-rain</li>
+                                    <li><i class="icon-cloud-snow place-left"></i>icon-cloud-snow</li>
+                                    <li><i class="icon-cloud-sun place-left"></i>icon-cloud-sun</li>
+                                    <li><i class="icon-cloud-swirl place-left"></i>icon-cloud-swirl</li>
+                                    <li><i class="icon-cloud-thunder place-left"></i>icon-cloud-thunder</li>
+                                    <li><i class="icon-compass place-left"></i>icon-compass</li>
+                                    <li><i class="icon-conference-call-1 place-left"></i>icon-conference-call-1</li>
+                                    <li><i class="icon-contact place-left"></i>icon-contact</li>
+                                    <li><i class="icon-contact-book place-left"></i>icon-contact-book</li>
+                                    <li><i class="icon-copy place-left"></i>icon-copy</li>
+                                    <li><i class="icon-cut place-left"></i>icon-cut</li>
+                                    <li><i class="icon-disc place-left"></i>icon-disc</li>
+                                    <li><i class="icon-document-download place-left"></i>icon-document-download</li>
+                                    <li><i class="icon-document-upload place-left"></i>icon-document-upload</li>
+                                    <li><i class="icon-documents-1 place-left"></i>icon-documents-1</li>
+                                    <li><i class="icon-download place-left"></i>icon-download</li>
+                                    <li><i class="icon-edit-1 place-left"></i>icon-edit-1</li>
+                                    <li><i class="icon-favorite place-left"></i>icon-favorite</li>
+                                    <li><i class="icon-flag place-left"></i>icon-flag</li>
+                                    <li><i class="icon-flag-1 place-left"></i>icon-flag-1</li>
+                                    <li><i class="icon-flag-4 place-left"></i>icon-flag-4</li>
+                                    <li><i class="icon-flag-2 place-left"></i>icon-flag-2</li>
+                                    <li><i class="icon-flash-drive place-left"></i>icon-flash-drive</li>
+                                    <li><i class="icon-flash-off place-left"></i>icon-flash-off</li>
+                                    <li><i class="icon-flash-on place-left"></i>icon-flash-on</li>
+                                    <li><i class="icon-globe place-left"></i>icon-globe</li>
+                                    <li><i class="icon-gps-off place-left"></i>icon-gps-off</li>
+                                    <li><i class="icon-gps-on place-left"></i>icon-gps-on</li>
+                                    <li><i class="icon-gps-settings place-left"></i>icon-gps-settings</li>
+                                    <li><i class="icon-hard-drive place-left"></i>icon-hard-drive</li>
+                                    <li><i class="icon-head-phone place-left"></i>icon-head-phone</li>
+                                    <li><i class="icon-heart place-left"></i>icon-heart</li>
+                                    <li><i class="icon-help place-left"></i>icon-help</li>
+                                    <li><i class="icon-home place-left"></i>icon-home</li>
+                                    <li><i class="icon-in place-left"></i>icon-in</li>
+                                    <li><i class="icon-information place-left"></i>icon-information</li>
+                                    <li><i class="icon-key place-left"></i>icon-key</li>
+                                    <li><i class="icon-left-arrow place-left"></i>icon-left-arrow</li>
+                                    <li><i class="icon-location-marker place-left"></i>icon-location-marker</li>
+                                    <li><i class="icon-location-pin place-left"></i>icon-location-pin</li>
+                                    <li><i class="icon-lock place-left"></i>icon-lock</li>
+                                    <li><i class="icon-logout place-left"></i>icon-logout</li>
+                                    <li><i class="icon-mail place-left"></i>icon-mail</li>
+                                    <li><i class="icon-mailbox place-left"></i>icon-mailbox</li>
+                                    <li><i class="icon-media-fast-backward place-left"></i>icon-media-fast-backward</li>
+                                    <li><i class="icon-media-fast-forward place-left"></i>icon-media-fast-forward</li>
+                                </ol>
+                            </div>
+                            <div class="span5">
+                                <ol class="unstyled sprite-details">
+                                    <li><i class="icon-media-player place-left"></i>icon-media-player</li>
+                                    <li><i class="icon-message place-left"></i>icon-message</li>
+                                    <li><i class="icon-messages place-left"></i>icon-messages</li>
+                                    <li><i class="icon-minus place-left"></i>icon-minus</li>
+                                    <li><i class="icon-moon place-left"></i>icon-moon</li>
+                                    <li><i class="icon-negative place-left"></i>icon-negative</li>
+                                    <li><i class="icon-new place-left"></i>icon-new</li>
+                                    <li><i class="icon-next place-left"></i>icon-next</li>
+                                    <li><i class="icon-node place-left"></i>icon-node</li>
+                                    <li><i class="icon-open place-left"></i>icon-open</li>
+                                    <li><i class="icon-out place-left"></i>icon-out</li>
+                                    <li><i class="icon-paste-1 place-left"></i>icon-paste-1</li>
+                                    <li><i class="icon-pause place-left"></i>icon-pause</li>
+                                    <li><i class="icon-picture place-left"></i>icon-picture</li>
+                                    <li><i class="icon-play place-left"></i>icon-play</li>
+                                    <li><i class="icon-positive place-left"></i>icon-positive</li>
+                                    <li><i class="icon-power-button place-left"></i>icon-power-button</li>
+                                    <li><i class="icon-preview place-left"></i>icon-preview</li>
+                                    <li><i class="icon-previous place-left"></i>icon-previous</li>
+                                    <li><i class="icon-printer place-left"></i>icon-printer</li>
+                                    <li><i class="icon-properties place-left"></i>icon-properties</li>
+                                    <li><i class="icon-qr-code place-left"></i>icon-qr-code</li>
+                                    <li><i class="icon-recycle-bin place-left"></i>icon-recycle-bin</li>
+                                    <li><i class="icon-redo-1 place-left"></i>icon-redo-1</li>
+                                    <li><i class="icon-refresh-1 place-left"></i>icon-refresh-1</li>
+                                    <li><i class="icon-reload place-left"></i>icon-reload</li>
+                                    <li><i class="icon-rename place-left"></i>icon-rename</li>
+                                    <li><i class="icon-save place-left"></i>icon-save</li>
+                                    <li><i class="icon-search place-left"></i>icon-search</li>
+                                    <li><i class="icon-send place-left"></i>icon-send</li>
+                                    <li><i class="icon-settings place-left"></i>icon-settings</li>
+                                    <li><i class="icon-share place-left"></i>icon-share</li>
+                                    <li><i class="icon-share-1 place-left"></i>icon-share-1</li>
+                                    <li><i class="icon-share-2 place-left"></i>icon-share-2</li>
+                                    <li><i class="icon-share-3 place-left"></i>icon-share-3</li>
+                                    <li><i class="icon-shopping-bag place-left"></i>icon-shopping-bag</li>
+                                    <li><i class="icon-signal-bars place-left"></i>icon-signal-bars</li>
+                                    <li><i class="icon-signal-bars-1 place-left"></i>icon-signal-bars-1</li>
+                                    <li><i class="icon-sms place-left"></i>icon-sms</li>
+                                    <li><i class="icon-speaker-volume place-left"></i>icon-speaker-volume</li>
+                                    <li><i class="icon-stock-index-down place-left"></i>icon-stock-index-down</li>
+                                    <li><i class="icon-stock-index-up place-left"></i>icon-stock-index-up</li>
+                                    <li><i class="icon-stop place-left"></i>icon-stop</li>
+                                    <li><i class="icon-swap-down place-left"></i>icon-swap-down</li>
+                                    <li><i class="icon-swap-left place-left"></i>icon-swap-left</li>
+                                    <li><i class="icon-swap-right place-left"></i>icon-swap-right</li>
+                                    <li><i class="icon-swap-up place-left"></i>icon-swap-up</li>
+                                    <li><i class="icon-synchronize-1 place-left"></i>icon-synchronize-1</li>
+                                    <li><i class="icon-table-of-contents place-left"></i>icon-table-of-contents</li>
+                                    <li><i class="icon-tag place-left"></i>icon-tag</li>
+                                    <li><i class="icon-text-document place-left"></i>icon-text-document</li>
+                                    <li><i class="icon-trophy place-left"></i>icon-trophy</li>
+                                    <li><i class="icon-undo-1 place-left"></i>icon-undo-1</li>
+                                    <li><i class="icon-upload place-left"></i>icon-upload</li>
+                                    <li><i class="icon-vibrate place-left"></i>icon-vibrate</li>
+                                    <li><i class="icon-vibrate-1 place-left"></i>icon-vibrate-1</li>
+                                    <li><i class="icon-video-camera place-left"></i>icon-video-camera</li>
+                                    <li><i class="icon-voice-search place-left"></i>icon-voice-search</li>
+                                    <li><i class="icon-voicemail place-left"></i>icon-voicemail</li>
+                                    <li><i class="icon-warning-message place-left"></i>icon-warning-message</li>
+                                    <li><i class="icon-wifi place-left"></i>icon-wifi</li>
+                                    <li><i class="icon-zoom place-left"></i>icon-zoom</li>
+                                    <li><i class="icon-zoom-in place-left"></i>icon-zoom-in</li>
+                                    <li><i class="icon-zoom-out place-left"></i>icon-zoom-out</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="header-bar">
+		    <div class="header-bar-inner bg-color-darken" style="padding: 10px 10px 5px;">
+		        <p class="tertiary-text fg-color-white">2012, Metro UI CSS © by <a class="fg-color-blueLight" href="mailto:sergey@pimenov.com.ua">Sergey Pimenov</a></p>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>

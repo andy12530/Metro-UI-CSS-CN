@@ -1,0 +1,1057 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
+	<title>Metor UI CSS 中文版/中文翻译</title>
+
+	<link href="css/modern.css" rel="stylesheet">
+    <link href="css/modern-responsive.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet" type="text/css">
+    
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="js/accordion.js"></script>
+    <script type="text/javascript" src="js/buttonset.js"></script>
+    <script type="text/javascript" src="js/rating.js"></script>
+    <script type="text/javascript" src="js/title-image-slider.js"></script>
+    <script type="text/javascript" src="js/pagecontrol.js"></script>
+</head>
+<body>
+	<div class="page secondary">
+		<div class="navigation-bar">
+			<div class="navigation-bar-inner">
+				<span class="menu-pull"></span>
+				<div class="brand">
+					<a href="index.html">
+						<span class="metro-ui-logo place-left"></span>
+					</a>
+					<a href="index.html">
+						<span class="name">
+							Metor UI CSS
+							<sup class="fg-color-yellow tertiary-info-secondary-text">v 0.1.4</sup>
+						</span>
+					</a>
+				</div>
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li data-role="dropdown" class="sub-menu">
+						<a href="#">框架</a>
+						<ul class="dropdown-menu">
+							<li><a href="scaffolding.html">全局样式</a></li>
+							<li><a href="scaffolding.html#layout">布局&模版</a></li>
+							<li><a href="scaffolding.html#grid">格栅系统</a></li>
+							<li class="divider"></li>
+							<li><a href="scaffolding.html#resonsive">响应式设计</a></li>
+						</ul>
+					</li>
+					<li data-role="dropdown" class="sub-menu">
+						<a href="#">基础 CSS</a>
+						<ul class="dropdown-menu">
+							<li><a href="basecss.html#typo">排版</a></li>
+							<li><a href="basecss.html#table">表格</a></li>
+							<li><a href="basecss.html#form">表单</a></li>
+							<li><a href="basecss.html#button">按钮</a></li>
+							<li><a href="basecss.html#images">图片</a></li>
+							<li class="divider"></li>
+							<li><a href="basecss.html#icons">Metro 图标</a></li>
+						</ul>
+					</li>
+					<li data-role="dropdown" class="sub-menu">
+						<a href="#">组件</a>
+						<ul class="dropdown-menu">
+							<li><a href="components.html">砖块</a></li>
+							<li><a href="components.html#menu">菜单 & 导航</a></li>
+							<li><a href="components.html#sidebar">侧边栏</a></li>
+							<li><a href="components.html#pagecontrol">标签页</a></li>
+							<li><a href="components.html#accordion">手风琴</a></li>
+							<li><a href="components.html#buttonset">按钮组</a></li>
+							<li><a href="components.html#rating">评分</a></li>
+							<li><a href="components.html#progress">进度条</a></li>
+							<li class=divider></li>
+							<li><a href="components.html#notice">提醒 & 回复</a></li>
+						</ul>
+					</li>
+					<li><a href="https://github.com/olton/Metro-UI-CSS" target="_blank">获取源码</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="page-header">
+            <div class="page-header-content">
+                <h1>砖块<small>风格</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+                <div class="grid">
+                    <div class="row">
+                        <div class="span10">
+                            <h2>Windows 8 开始示例页面</h2>
+                            <p>
+                                <a href="http://metroui.org.ua/windows8start.php" target="_blank">示例</a>
+                            </p>
+
+                            <h2>说明信息</h2>
+                            <p>
+                                砖块表示程序或者某个子模块。你可以砖块中显示内容，理想状态它应该是经常更换的，它可以为你的用户传达实时的信息。
+                                砖块可以显示文字、图片、显示状态的徽章。砖块可以放置在斜体任何容器中。
+                            </p>
+
+                            <p>
+                            	默认砖块大小是 150x150 px。你可以增加新的class来调整它的尺寸: <code>.double(-vertical)</code>, <code>.triple(-vertical)</code>, <code>.quadro(-vertical)</code>.</p>
+                            <p>当砖块为 “选中” 状态时，你可以使用属性 <code>.bg-color-*</code> 来改变它的背景颜色</p>
+
+                            <h3>示例:</h3>
+
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile double"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile selected"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile bg-color-orange"</span><span class="tag">&gt;&lt;/div&gt;</span></li></ol></pre>
+                            <div class="clearfix">
+                                <div class="tile"></div>
+                                <div class="tile double"></div>
+                                <div class="tile selected"></div> 
+                                <div class="tile bg-color-orange"></div>
+                            </div>
+
+                            <h3>砖块内容</h3>
+                            <p>砖块内容使用子 class <code>.tile-content</code>，它拥有10px的上下内边距(padding)，15px的左右内边距(padding)</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">            </span><small><span class="pln">...content here...</span></small></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <div class="clearfix">
+                                <div class="tile double bg-color-green">
+                                    <div class="tile-content">
+                                        <h2>chamenhu@zhongnanhai.com.cn</h2>
+                                        <h5>回复: 关于十八大内参!</h5>
+                                        <p>
+                                            Congratulations! I'm really excited to celebrate with you all. Thanks for...
+                                        </p>
+                                    </div>
+                                    <div class="brand">
+                                        <div class="badge">12</div>
+                                        <img class="icon" src="images/Mail128.png">
+                                    </div>
+                                </div>
+                                <div class="tile bg-color-red">
+                                    <b class="check"></b>
+                                    <div class="tile-content icon">
+                                        <img src="images/Market128.png">
+                                    </div>
+                                    <div class="brand">
+                                        <span class="name">商店</span>
+                                        <span class="badge">6</span>
+                                    </div>
+                                </div>
+                                <div class="tile double bg-color-blueDark">
+                                    <div class="tile-content">
+                                        <img src="images/michael.jpg" class="place-right">
+                                        <h4 style="margin-bottom: 5px;">作者：michael_angiulo</h4>
+                                        <p>
+                                            I just saw Thor last night. It was awesome! I think you'd love it.
+                                        </p><h5>RT @julie_green</h5>
+                                        <p></p>
+                                    </div>
+                                    <div class="brand">
+                                        <span class="name">Tweet@rama</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>砖块中使用子 class</h3>
+                            <p>砖块中可以使用的子 class 包括: <code>.icon</code>, <code>.image</code>, <code>.image-set</code>, <code>.image-slider</code>.</p>
+                            <div class="grid">
+                                <div class="row">
+                                    <div class="span2">
+                                        <h5>Subclass .icon</h5>
+                                        <div class="tile">
+                                            <div class="tile-content icon">
+                                                <img src="images/armor.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <h5>Subclass .image</h5>
+                                        <div class="tile double">
+                                            <div class="tile-content image">
+                                                <img src="images/5.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <h5>Subclass .image-set</h5>
+                                        <div class="tile double">
+                                            <div class="tile-content images-set">
+                                                <img src="images/1.jpg" alt="">
+                                                <img src="images/2.jpg" alt="">
+                                                <img src="images/3.jpg" alt="">
+                                                <img src="images/4.jpg" alt="">
+                                                <img src="images/5.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <h5>Subclass .image-slider</h5>
+                                        <div class="tile double" data-role="image-slider">
+                                            <div class="tile-content image images-slider">
+                                                <img src="images/1.jpg" alt="" style="position: absolute; top: 0px; left: -161.81505833926906px; ">
+                                                <img src="images/2.jpg" alt="" style="position: absolute; top: 0px; left: -310px; ">
+                                                <img src="images/3.jpg" alt="" style="position: absolute; top: 0px; left: -310px; ">
+                                                <img src="images/4.jpg" alt="" style="position: absolute; top: 0px; left: -310px; ">
+                                                <img src="images/5.jpg" alt="" style="position: absolute; top: 0px; left: -310px; ">
+                                            <img src="images/5.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content icon(image)"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">    ------------</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content image-set"</span><span class="tag">&gt;</span></li><li class="L8"><span class="pln">            </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L9"><span class="pln">            </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L0"><span class="pln">          </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L1"><span class="pln">          </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L2"><span class="pln">          </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">    ------------</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"image-slider"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile-content image image-slider"</span><span class="tag">&gt;</span></li><li class="L8"><span class="pln">            </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L9"><span class="pln">            ...</span></li><li class="L0"><span class="pln">            </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                                <p>
+                                    图片跑马灯效果必须在页面顶部引用 <code>tile-image-slider.js</code>.
+                                </p>
+
+                            </div>
+
+                            <h3>砖块状态</h3>
+                            <p>砖块状态可以使用子 class <code>.brand</code> 或者 <code>.tile-status</code>. 可以使用 classes <code>.bg-color-* </code>来改变它的背景颜色</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">            </span><small><span class="pln">...status content here...</span></small></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <h3>砖块状态 &gt; 徽章</h3>
+                            <p>
+                                你可以使用数字1-99，或者任何图标。它会显示在砖块的右小角。
+                                Metro UI CSS 支持主要的 Windows 8 徽章，包括: <span class="fg-color-blue">activity, alert, available, away, busy, newMessage, paused, playing, unavailable, error and attention</span> 。默认背景颜色为蓝色，你可以使用class <code>.bg-color-*</code> 来改变背景颜色。
+                            </p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"badge activity"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <div class="clearfix">
+                                <div class="tile">
+                                    <div class="tile-status">
+                                        <div class="badge bg-color-blue">99</div>
+                                    </div>
+                                </div>
+                                <div class="tile">
+                                    <div class="tile-status">
+                                        <div class="badge activity"></div>
+                                    </div>
+                                </div>
+                                <div class="tile">
+                                    <div class="brand">
+                                        <div class="badge alert"></div>
+                                    </div>
+                                </div>
+                                <div class="tile">
+                                    <div class="brand">
+                                        <div class="badge available"></div>
+                                    </div>
+                                </div>
+                                <div class="tile">
+                                    <div class="brand">
+                                        <div class="badge away"></div>
+                                    </div>
+                                </div>
+                                <div class="tile">
+                                    <div class="brand">
+                                        <div class="badge busy"></div>
+                                    </div>
+                                </div>
+                                <div class="tile">
+                                    <div class="brand">
+                                        <div class="badge newMessage"></div>
+                                    </div>
+                                </div>
+                                <div class="tile">
+                                    <div class="brand">
+                                        <div class="badge paused"></div>
+                                    </div>
+                                </div>
+                                <div class="tile">
+                                    <div class="brand">
+                                        <div class="badge playing"></div>
+                                    </div>
+                                </div>
+                                <div class="tile">
+                                    <div class="brand">
+                                        <div class="badge unavailable"></div>
+                                    </div>
+                                </div>
+                                <div class="tile">
+                                    <div class="brand">
+                                        <div class="badge error"></div>
+                                    </div>
+                                </div>
+                                <div class="tile">
+                                    <div class="brand">
+                                        <div class="badge attention"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>砖块状态 &gt; 品牌信息</h3>
+                            <p>
+                            	品牌信息可以用来显示品牌名称或者图标，它会显示在砖块的左下角。
+                            </p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"name"</span><span class="tag">&gt;</span><span class="pln">Name</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tile"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand"</span><span class="tag">&gt;</span></li><li class="L8"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon"</span><span class="tag">&gt;</span><span class="pln"> </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"> </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <div class="clearfix">
+                                <div class="tile">
+                                    <div class="brand">
+                                        <div class="badge">10</div>
+                                        <div class="name">Mail</div>
+                                    </div>
+                                </div>
+                                <div class="tile double bg-color-green">
+                                    <div class="brand">
+                                        <div class="badge">12</div>
+                                        <img class="icon" src="images/Mail128.png">
+                                    </div>
+                                </div>
+                                <div class="tile double bg-color-pink">
+                                    <div class="brand">
+                                        <div class="name">Photos</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tiles clearfix">
+                    <h3>使用h Metro UI CSS 构建出的砖块示例</h3>
+                    <div class="tile">
+                        <div class="tile-content image">
+                            <img src="images/myface.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="tile">
+                        <div class="tile-content icon">
+                            <img src="images/Mail128.png">
+                        </div>
+                        <div class="brand">
+                            <div class="badge">10</div>
+                            <div class="name">Mail</div>
+                        </div>
+                    </div>
+
+                    <div class="tile bg-color-orangeDark selected">
+                        <b class="check"></b>
+                        <div class="tile-content icon">
+                            <img src="images/Video128.png" alt="">
+                        </div>
+                        <div class="brand">
+                            <span class="name">Video</span>
+                        </div>
+                    </div>
+
+                    <div class="tile double">
+                        <div class="tile-content image">
+                            <img src="images/5.jpg" alt="">
+                        </div>
+                        <div class="brand">
+                            <span class="name">Pictures</span>
+                            <div class="badge bg-color-orange">5</div>
+                        </div>
+                    </div>
+
+                    <div class="tile double-vertical bg-color-yellow">
+                        <div class="tile-content icon">
+                            <img src="images/Calendar128.png">
+                        </div>
+                        <div class="brand">
+                            <span class="name">Calendar</span>
+                        </div>
+                    </div>
+
+                    <div class="tile bg-color-green selected">
+                        <b class="check"></b>
+                        <div class="tile-content icon">
+                            <img src="images/Market128.png">
+                        </div>
+                        <div class="brand">
+                            <span class="name">Store</span>
+                            <span class="badge">6</span>
+                        </div>
+                    </div>
+
+                    <div class="tile bg-color-red selected">
+                        <div class="tile-content icon">
+                            <img src="images/Music128.png" alt="">
+                        </div>
+                        <div class="brand">
+                            <span class="name">Music</span>
+                        </div>
+                    </div>
+
+                    <div class="tile double bg-color-blueDark">
+                        <div class="tile-content">
+                            <img src="images/michael.jpg" class="place-left">
+                            <h3 style="margin-bottom: 5px;">michael_angiulo</h3>
+                            <p>
+                                I just saw Thor last night. It was awesome! I think you'd love it.
+                                </p><h5>RT @julie_green</h5>
+                            <p></p>
+                        </div>
+                        <div class="brand">
+                            <span class="name">Tweet@rama</span>
+                        </div>
+                    </div>
+
+                    <div class="tile bg-color-darken">
+                        <div class="tile-content icon">
+                            <img src="images/YouTube128.png" alt="">
+                        </div>
+                        <div class="brand">
+                            <span class="name">YouTube</span>
+                        </div>
+                    </div>
+
+                    <div class="tile">
+                        <div class="tile-content icon">
+                            <img src="images/excel2013icon.png">
+                        </div>
+                        <div class="brand">
+                            <span class="name">Excel 2013</span>
+                        </div>
+                    </div>
+
+                    <div class="tile double bg-color-green">
+                        <div class="tile-content">
+                            <h2>mattberg@live.com</h2>
+                            <h5>Re: Wedding Annoucement!</h5>
+                            <p>
+                                Congratulations! I'm really excited to celebrate with you all. Thanks for...
+                            </p>
+                        </div>
+                        <div class="brand">
+                            <div class="badge">12</div>
+                            <img class="icon" src="images/Mail128.png">
+                        </div>
+                    </div>
+
+                    <div class="tile double">
+                        <div class="tile-content image">
+                            <img src="images/4.jpg" alt="">
+                        </div>
+                        <div class="brand bg-color-orange">
+                            <img class="icon" src="images/Rss128.png">
+                            <p class="text">This is a desert eagle. He is very hungry and angry bird.</p>
+                            <div class="badge">10</div>
+                        </div>
+                    </div>
+
+                    <div class="tile double">
+                        <div class="tile-content images-set">
+                            <img src="images/1.jpg" alt="">
+                            <img src="images/2.jpg" alt="">
+                            <img src="images/3.jpg" alt="">
+                            <img src="images/4.jpg" alt="">
+                            <img src="images/5.jpg" alt="">
+                        </div>
+                        <div class="brand">
+                            <span class="name">Photos</span>
+                        </div>
+                    </div>
+
+                    <div class="tile bg-color-blue">
+                        <div class="tile-content icon">
+                            <img src="images/InternetExplorer128.png">
+                        </div>
+                        <div class="brand">
+                            <span class="name">Internet Explorer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-header" id="menu">
+            <div class="page-header-content">
+                <h1>菜单<small>示例</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+                <div class="span10">
+                    <h2>九大长老</h2>
+                    <div class="clearfix">
+                        <ul class="dropdown-menu open" style="display: block; position: static; margin-bottom: 15px; margin-left: 0;">
+                            <li><a href="#">胡锦涛</a></li>
+                            <li><a href="#">温家宝</a></li>
+                            <li><a href="#">李长春</a></li>
+                            <li><a href="#">周永康</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">席近平</a></li>
+                        </ul>
+                    </div>
+                    <p>
+                        子菜单点击切换需要使用 <code>dropdown</code> javascript 插件.
+                    </p>
+                </div>
+
+                <h2>导航条</h2>
+                <div class="span10">
+                    <div class="navigation-bar">
+                        <div class="navigation-bar-inner">
+                            <div class="brand"><a class="name" href="#">沦陷区</a></div>
+
+                            <ul class="place-right">
+                                <li data-role="dropdown" class="sub-menu">
+                                    <a>万恶资本主义</a>
+                                    <ul class="dropdown-menu place-right" style="overflow: hidden; display: none; ">
+                                        <li><a href="#">SubItem 1</a></li>
+                                        <li><a href="#">SubItem 2</a></li>
+                                        <li><a href="#">SubItem 3</a></li>
+                                        <li><a href="#">SubItem 4</a></li>
+                                        <li><a href="#">SubItem 5</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li data-role="dropdown" class="sub-menu">
+                                    <a>老朋友</a>
+                                    <ul class="dropdown-menu" style="overflow: hidden; display: none; ">
+                                        <li><a href="#">伊朗</a></li>
+                                        <li><a href="#">朝鲜</a></li>
+                                        <li><a href="#">古巴</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">以色列</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">好朋友</a></li>
+                                <li><a href="#">伟大的朋友</a></li>
+                                <li><a href="#">永远的朋友</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+<pre class="prettyprint linenums span10"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"navigation-bar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"navigation-bar-inner"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">                </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"name"</span><span class="tag">&gt;</span><span class="pln">Project Name</span><span class="tag">&lt;/span&gt;</span></li><li class="L4"><span class="pln">            </span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="pln">            </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"place-right"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">                </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sub-menu"</span><span class="tag">&gt;</span></li><li class="L8"><span class="pln">                    </span><span class="tag">&lt;a&gt;</span><span class="pln">Right Menu</span><span class="tag">&lt;/a&gt;</span></li><li class="L9"><span class="pln">                    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-menu place-right"</span><span class="tag">&gt;</span></li><li class="L0"><span class="pln">                        </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">SubItem</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L1"><span class="pln">                        ...</span></li><li class="L2"><span class="pln">                        </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">SubItem</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">                    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L4"><span class="pln">                </span><span class="tag">&lt;/li&gt;</span></li><li class="L5"><span class="pln">            </span><span class="tag">&lt;/ul&gt;</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="pln">            </span><span class="tag">&lt;ul&gt;</span></li><li class="L8"><span class="pln">                </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sub-menu"</span><span class="tag">&gt;</span></li><li class="L9"><span class="pln">                    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Item 1</span><span class="tag">&lt;/a&gt;</span></li><li class="L0"><span class="pln">                    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dropdown-menu"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">                        </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">SubItem</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L2"><span class="pln">                        ...</span></li><li class="L3"><span class="pln">                        </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">SubItem</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="pln">                    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L5"><span class="pln">                </span><span class="tag">&lt;/li&gt;</span></li><li class="L6"><span class="pln">                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="tag">/&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">                </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"divider"</span><span class="tag">&gt;&lt;/li&gt;</span></li><li class="L8"><span class="pln">                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="tag">/&gt;&lt;/li&gt;</span></li><li class="L9"><span class="pln">            </span><span class="tag">&lt;/ul&gt;</span></li><li class="L0"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                <h2>水平菜单</h2>
+                <div class="span10">
+                    <div class="horizontal-menu">
+                        <ul>
+                            <li><a href="#">伊朗</a></li>
+                            <li><a href="#">古巴</a></li>
+                            <li><a href="#">朝鲜</a></li>
+                            <li><a href="#">利比亚</a></li>
+                            <li><a href="#">埃及</a></li>
+                        </ul>
+                    </div>
+                    <br>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"horizontal-menu"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">ItemName</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">            ...</span></li><li class="L4"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">ItemName</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;/ul&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                </div>
+
+                <h2>水平菜单中使用子菜单</h2>
+                <div class="span10">
+                    <div class="horizontal-menu">
+                        <ul>
+                            <li class="sub-menu"><a href="#">Item1</a>
+                                <ul>
+                                    <li class="sub-menu"><a href="#">SubItem1</a>
+                                        <ul>
+                                            <li><a href="#">SubItem1</a></li>
+                                            <li><a href="#">SubItem2</a></li>
+                                            <li><a href="#">SubItem3</a></li>
+                                            <li class="sub-menu"><a href="#">SubItem4</a>
+                                                <ul>
+                                                    <li><a href="#">SubItem1</a>
+                                                    </li>
+                                                    <li><a href="#">SubItem2</a></li>
+                                                    <li><a href="#">SubItem3</a></li>
+                                                    <li class="sub-menu"><a href="#">SubItem4</a>
+                                                        <ul>
+                                                            <li><a href="#">SubItem1</a>
+                                                            </li>
+                                                            <li><a href="#">SubItem2</a></li>
+                                                            <li><a href="#">SubItem3</a></li>
+                                                            <li><a href="#">SubItem4</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">SubItem2</a></li>
+                                    <li><a href="#">SubItem3</a></li>
+                                    <li><a href="#">SubItem4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"horizontal-menu"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sub-menu"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">ItemName</span><span class="tag">&lt;/a&gt;</span></li><li class="L3"><span class="pln">                </span><span class="tag">&lt;ul&gt;</span></li><li class="L4"><span class="pln">                    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">ItemName</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L5"><span class="pln">                    ...</span></li><li class="L6"><span class="pln">                    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">ItemName</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L7"><span class="pln">                </span><span class="tag">&lt;/ul&gt;</span></li><li class="L8"><span class="pln">            </span><span class="tag">&lt;/li&gt;</span></li><li class="L9"><span class="pln">            ...</span></li><li class="L0"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">ItemName</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;/ul&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-header" id="sidebar">
+            <div class="page-header-content">
+                <h1>侧边栏<small>示例</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-sidebar">
+            <ul>
+                <li>
+                    <a>工程</a>
+                    <ul class="sub-menu">
+                        <li><a href="">当前</a></li>
+                        <li><a href="">已关闭</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>笔记</a>
+                    <ul class="sub-menu">
+                        <li><a href="">重要</a></li>
+                        <li><a href="">今日</a></li>
+                        <li><a href="">本周</a></li>
+                        <li><a href="">本月</a></li>
+                    </ul>
+                </li>
+
+                <li class="sticker sticker-color-orange"><a href="#"><i class="icon-shopping-bag"></i>购物</a></li>
+                <li class="sticker sticker-color-orangeDark"><a href="#"><i class="icon-clipboard"></i>食谱</a></li>
+                <li class="sticker sticker-color-green"><a href="#"><i class="icon-history"></i>爱好</a></li>
+                <li class="sticker sticker-color-pink" data-role="dropdown">
+                    <a><i class="icon-tile-view"></i>计划</a>
+                    <ul class="sub-menu light sidebar-dropdown-menu open">
+                        <li><a href="">今日</a></li>
+                        <li><a href="">待办事项</a></li>
+                        <li><a href="">计划</a></li>
+                        <li><a href="">电影</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="page-region" style="margin-left:120px;"> 
+            <div class="page-region-content">
+                <div class="span9">
+                    <h2>前提</h2>
+                    <p>
+                        首要必须创建一个拥有 <code>sidebar</code> 的布局
+                    </p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"page [secondary] with-sidebar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"page-header"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"page-sidebar"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"page-region"</span><span class="pln"> </span><span class="tag">/&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                    <h2>侧边栏</h2>
+                    <p>
+                        定义侧边栏使用 <code>&lt;ul /&gt;</code>
+                    </p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"page-sidebar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a&gt;</span><span class="pln">Item</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">            ...</span></li><li class="L4"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a&gt;</span><span class="pln">Item</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;/ul&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                    <h2>图标</h2>
+                    <p>
+                        可以为条目添加 class <code>icon-*</code> 来显示图标。
+                    </p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"page-sidebar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a&gt;&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-cube"</span><span class="tag">&gt;&lt;/i&gt;</span><span class="pln">Item</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">            ...</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;/ul&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                    <h2>彩色</h2>
+                    <p>
+                        使用 class <code>sticker</code> 为条目添加彩色标签.
+                    </p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"page-sidebar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sticker"</span><span class="tag">&gt;&lt;a&gt;</span><span class="pln">Item</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">            ...</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;/ul&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                    <p>
+                    彩色标签使用前缀 <code>sticker-</code>. 例如: <code>sticker-color-blue</code>
+                    </p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"page-sidebar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sticker sticker-color-blue"</span><span class="tag">&gt;&lt;a&gt;</span><span class="pln">Item</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L3"><span class="pln">            ...</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;/ul&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                    <h2>二级菜单</h2>
+                    <p>
+                        可以在侧边栏创建二级菜单.
+                    </p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"page-sidebar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;li&gt;</span></li><li class="L3"><span class="pln">                </span><span class="tag">&lt;a&gt;</span><span class="pln">Item</span><span class="tag">&lt;/a&gt;</span></li><li class="L4"><span class="pln">                </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sub-menu"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">                ...</span></li><li class="L6"><span class="pln">                </span><span class="tag">&lt;/ul&gt;</span></li><li class="L7"><span class="pln">            </span><span class="tag">&lt;/li&gt;</span></li><li class="L8"><span class="pln">            ...</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;/ul&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                    <h2>二级下拉菜单</h2>
+                    <p>
+                        你也可以为二级菜单创建 <strong>dropdown</strong> 按钮。
+                    </p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"page-sidebar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"dropdown"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">                </span><span class="tag">&lt;a&gt;</span><span class="pln">Item</span><span class="tag">&lt;/a&gt;</span></li><li class="L4"><span class="pln">                </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sub-menu sidebar-dropdown-menu"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">                ...</span></li><li class="L6"><span class="pln">                </span><span class="tag">&lt;/ul&gt;</span></li><li class="L7"><span class="pln">            </span><span class="tag">&lt;/li&gt;</span></li><li class="L8"><span class="pln">            ...</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;/ul&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                    <p>
+                        使用下拉按钮必须在 head中引入 <code>dropdown.js</code>。
+                    </p>
+
+                    <h2>淡色二级菜单</h2>
+                    <p>
+                        你可以使用 class <code>light</code> 来创建淡色二级菜单。
+                    </p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"page-sidebar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;ul&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;li&gt;</span></li><li class="L3"><span class="pln">                </span><span class="tag">&lt;a&gt;</span><span class="pln">Item</span><span class="tag">&lt;/a&gt;</span></li><li class="L4"><span class="pln">                </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sub-menu light"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">                ...</span></li><li class="L6"><span class="pln">                </span><span class="tag">&lt;/ul&gt;</span></li><li class="L7"><span class="pln">            </span><span class="tag">&lt;/li&gt;</span></li><li class="L8"><span class="pln">            ...</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;/ul&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="page-header" id="pagecontrol">
+            <div class="page-header-content">
+                <h1>标签页<small>示例</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+
+                <div class="page-control span10" data-role="page-control">
+                    <ul>
+                        <li class="active"><a href="#page1">页面 1</a></li>
+                        <li class=""><a href="#page2">页面 2</a></li>
+                        <li class=""><a href="#page3">页面 3</a></li>
+                        <li class=""><a href="#page4">页面 4</a></li>
+                    </ul>
+
+                    <div class="frames">
+                        <div class="frame active" id="page1" style="display: block; ">
+                            <h2>新华日报语录1</h2>
+                            <p>由于各个国家的歷史發展、社会状况等具体条件的不同，他们各自所实行的民主政治，可能在形式和内容上，都存在着多少差异。但无论如何，它们之间有一个基本点是相同的，那就是政权为人民所握有，为人民所运用，而且为着人民的幸福和利益而服务。这样的政权必然尊重和保障人民的自.由权利；使失掉自由权利的人民重新获得自由权利；没有失掉自.由权利的充分享有自.由权利；特别是言论、出版、机会、结社，这些作为实行民主政治的基本条件的人民的最低限度的自由权利，是必须切实而充分地加以保障的。</p>
+                        </div>
+                        <div class="frame" id="page2" style="display: none; ">
+                            <h2>新华日报语录2</h2>
+                            <p>二十年来，尤其是最近几年，我们天天见的是"只许州官放火，不许百姓点灯。"政府所颁布的法令，其是否为人民着想，姑置不论。最使人愤慨的是连这样的法，政府并未遵守。政府天天要人民守法，而政府自己却天天违法。这样的作风，和民主二字相距十万八千里！所以民主云云者是真是假，我们卑之无甚高论，第一步先看政府所发的那些空头民主支票究竟兑现了百分之几？如果已经写在白纸上的黑字尚不能兑现，还有什麼话可说?所以在政治协商会议开会以前，我们先要请把那些诺言来兑现，从这一点起码应做的小事上，望政府示人民以大信。</p>
+                        </div>
+                        <div class="frame" id="page3" style="display: none; ">
+                            <h2>新华日报语录3</h2>
+                            <p>他们说这一套都是外国人的东西，决不适用于中国……原来，科学为求真理，而真理是不分国界的……现在固然再也没有顽固派用国情特殊，来反对科学－－自然科学的真理了。只有在社会现象上，顽固派还在用八十年前顽固派用过的方法来反对真理……民主制度比不民主制度更好，这和机器工业比手工业生产更好一样，在外国如此，在中国也如此。而且也只能有在某国發展起来的民主，却没有只适用于某国的民主。有人说：中国虽然要民主，但中国的民主有点特别，是不给人民以自由的。这种说法的荒谬，也和说太阳历只适用外国、中国人只能用阴历一样。</p>
+                        </div>
+                        <div class="frame" id="page4" style="display: none; ">
+                            <h2>新华日报语录4</h2>
+                            <p>由于各个国家的歷史發展、社会状况等具体条件的不同，他们各自所实行的民主政治，可能在形式和内容上，都存在着多少差异。但无论如何，它们之间有一个基本点是相同的，那就是政权为人民所握有，为人民所运用，而且为着人民的幸福和利益而服务。这样的政权必然尊重和保障人民的自.由权利；使失掉自由权利的人民重新获得自由权利；没有失掉自.由权利的充分享有自.由权利；特别是言论、出版、机会、结社，这些作为实行民主政治的基本条件的人民的最低限度的自由权利，是必须切实而充分地加以保障的。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>组件示例</h2>
+<pre class="prettyprint linenums span10"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"page-control"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"page-control"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        === Tabs ===</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;ul&gt;</span></li><li class="L3"><span class="pln">            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#frame1"</span><span class="tag">&gt;</span><span class="pln">Frame1</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L4"><span class="pln">            ...</span></li><li class="L5"><span class="pln">            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#frameN"</span><span class="tag">&gt;</span><span class="pln">FrameN</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;/ul&gt;</span></li><li class="L7"><span class="pln">        === Tabs content ===</span></li><li class="L8"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"frames"</span><span class="tag">&gt;</span></li><li class="L9"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"frame active"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"frame1"</span><span class="tag">&gt;</span><span class="pln"> ...frame content... </span><span class="tag">&lt;/div&gt;</span></li><li class="L0"><span class="pln">            ...</span></li><li class="L1"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"frame"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"frameN"</span><span class="tag">&gt;</span><span class="pln"> ...frame content... </span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                <h2>Javascript</h2>
+                <p>使用时必须在head中引用 <code>pagecontrol.js</code></p>
+
+            </div>
+        </div>
+
+
+        <div class="page-header" id="accordion">
+            <div class="page-header-content">
+                <h1>手风琴<small>示例</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+                <h2>手风琴</h2>
+                <ul class="accordion span10" data-role="accordion">
+                    <li class="">
+                        <a href="#">frame 1</a>
+                        <div style="overflow: hidden; display: none; ">
+                            <h3>frame 1</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta condimentum sem sed commodo.
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="#">frame 2</a>
+                        <div style="overflow: hidden; display: block; ">
+                            <h3>frame 2</h3>
+                            Curabitur porta condimentum sem sed commodo. Praesent vestibulum, libero eget lacinia pretium, metus augue dapibus odio, nec placerat mauris justo non ante.
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="#">frame 3</a>
+                        <div style="overflow: hidden; display: none; ">
+                            <h3>frame 3</h3>
+                            Maecenas adipiscing nulla sed sem molestie quis pulvinar lectus convallis. Nam tortor arcu, gravida nec tristique sit amet, pretium sagittis eros. Curabitur at nisi ut ligula ornare euismod.
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="#">frame 4</a>
+                        <div style="overflow: hidden; display: none; ">
+                            <h3>frame 4</h3>
+                            Ut vitae tortor eget elit dictum dictum. Ut porttitor, ante non blandit gravida, felis risus feugiat neque, eu tincidunt neque ante at urna. Maecenas nec felis nulla.
+                        </div>
+                    </li>
+                </ul>
+                <h2>手风琴 灰色效果</h2>
+                <ul class="accordion dark span10" data-role="accordion">
+                    <li class="">
+                        <a href="#">frame 1</a>
+                        <div style="overflow: hidden; display: none; ">
+                            <h3>frame 1</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta condimentum sem sed commodo.
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="#">frame 2</a>
+                        <div style="overflow: hidden; display: none; ">
+                            <h3>frame 2</h3>
+                            Curabitur porta condimentum sem sed commodo. Praesent vestibulum, libero eget lacinia pretium, metus augue dapibus odio, nec placerat mauris justo non ante.
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="#">frame 3</a>
+                        <div style="overflow: hidden; display: none; ">
+                            <h3>frame 3</h3>
+                            Maecenas adipiscing nulla sed sem molestie quis pulvinar lectus convallis. Nam tortor arcu, gravida nec tristique sit amet, pretium sagittis eros. Curabitur at nisi ut ligula ornare euismod.
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="#">frame 4</a>
+                        <div style="overflow: hidden; display: none; ">
+                            <h3>frame 4</h3>
+                            Ut vitae tortor eget elit dictum dictum. Ut porttitor, ante non blandit gravida, felis risus feugiat neque, eu tincidunt neque ante at urna. Maecenas nec felis nulla.
+                        </div>
+                    </li>
+                </ul>
+                <h2>组件使用示例</h2>
+<pre class="prettyprint linenums span10"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"accordion"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"accordion"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln"> Caption </span><span class="tag">&lt;/a&gt;</span></li><li class="L3"><span class="pln">            </span><span class="tag">&lt;div&gt;</span><span class="pln"> ...content... </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;/li&gt;</span></li><li class="L5"><span class="pln">        ...</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;li&gt;</span></li><li class="L7"><span class="pln">            </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln"> Caption </span><span class="tag">&lt;/a&gt;</span></li><li class="L8"><span class="pln">            </span><span class="tag">&lt;div&gt;</span><span class="pln"> ...content... </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;/li&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L1"><span class="pln">    ==== Dark ===</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"accordion dark"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"accordion"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">        ...</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+                <h2>Javascript</h2>
+                <p>在head中引用 <code>accordion.js</code></p>
+            </div>
+        </div>
+
+        <div class="page-header" id="buttonset">
+            <div class="page-header-content">
+                <h1>按钮组<small>示例</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+                <div class="grid">
+                    <div class="row">
+                        <div class="span10">
+                            <h2>按钮组</h2>
+                            <div class="button-set place-left" data-role="button-set">
+                                <button class="">按钮 1</button>
+                                <button class="">按钮 2</button>
+                                <button class="active">按钮 3</button>
+                            </div>
+                            <div class="button-set" data-role="button-set">
+                                <button class="tool-button"><img src="images/bage-playing.png"></button>
+                                <button class="tool-button"><img src="images/bage-paused.png"></button>
+                                <button class="tool-button active"><img src="images/bage-busy.png"></button>
+                            </div>
+                            <h2>组件使用示例</h2>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-set"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"button-set"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"active"</span><span class="tag">&gt;</span><span class="pln"> ... </span><span class="tag">&lt;/button&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;button&gt;</span><span class="pln"> ... </span><span class="tag">&lt;/button&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">    ------------</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"button-set"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"button-set"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tool-button active"</span><span class="tag">&gt;</span><span class="pln"> ... </span><span class="tag">&lt;/button&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tool-button"</span><span class="tag">&gt;</span><span class="pln"> ... </span><span class="tag">&lt;/button&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <h3>Javascript</h3>
+                            <p>要使用按钮组须在head中引用 <code>buttonset.js</code></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-header" id="rating">
+            <div class="page-header-content">
+                <h1>评分<small>示例</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+                <div class="grid">
+                    <div class="row">
+                        <div class="span10">
+                            <h2>大星标</h2>
+
+                            <h3>静态</h3>
+                            <div>
+                                <div class="static-rating">
+                                    <div class="rating-value" style="width: 70%"></div>
+                                </div>
+                            </div>
+<br>
+<pre class="prettyprint linenums span10"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"static-rating"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rating-value"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">70</span><span class="pun">%</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                            <h3>静态 小星标</h3>
+                            <div>
+                                <div class="static-rating small">
+                                    <div class="rating-value" style="width: 70%"></div>
+                                </div>
+                            </div>
+<br>
+<pre class="prettyprint linenums span10"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"static-rating"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rating-value"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">70</span><span class="pun">%</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <h3>评分</h3>
+                            <div>
+                                <div class="rating" data-role="rating" data-rating="2">
+                                    <a href="#" class="rated"></a>
+                                    <a href="#" class="rated"></a>
+                                    <a href="#" class=""></a>
+                                    <a href="#" class=""></a>
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+<br>
+<pre class="prettyprint linenums span10"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rating"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"rating"</span><span class="pln"> </span><span class="atn">data-rating</span><span class="pun">=</span><span class="atv">"2"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;/a&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;/a&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;/a&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;/a&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;/a&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                            <h3>评分 小星标</h3>
+                            <div>
+                                <div class="rating small" data-role="rating" data-rating="4">
+                                    <a href="#" class="rated"></a>
+                                    <a href="#" class="rated"></a>
+                                    <a href="#" class="rated"></a>
+                                    <a href="#" class="rated"></a>
+                                    <a href="#" class=""></a>
+                                </div>
+                            </div>
+<br>
+<pre class="prettyprint linenums span10"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rating small"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"rating"</span><span class="pln"> </span><span class="atn">data-rating</span><span class="pun">=</span><span class="atv">"4"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;/a&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;/a&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;/a&gt;</span></li><li class="L4"><span class="pln">        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;/a&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;/a&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                            <p>
+                                使用评分组件必须在head中引入 <code>rating.js</code>。
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-header" id="progress">
+            <div class="page-header-content">
+                <h1>进度条<small>示例</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+                <div class="grid">
+                    <div class="row">
+                        <div class="span10">
+                            <h2>进度条</h2>
+                            <div class="progress-bar">
+                                <div class="bar" style="width: 75%;"></div>
+                            </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"progress-bar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bar"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">75</span><span class="pun">%</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                            <h2>彩色进度条</h2>
+                            <div class="progress-bar">
+                                <div class="bar bg-color-pink" style="width: 75%;"></div>
+                            </div>
+                            <br>
+                            <div class="progress-bar">
+                                <div class="bar bg-color-blue" style="width: 35%;"></div>
+                            </div>
+                            <br>
+                            <div class="progress-bar">
+                                <div class="bar bg-color-green" style="width: 55%;"></div>
+                            </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"progress-bar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bar bg-color-*"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">75</span><span class="pun">%</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+                            <h2>使用不同颜色来分段进度条</h2>
+                            <div class="progress-bar" data-role="progress-bar">
+                                <div class="bar bg-color-pink" data-bar="30" style="width: 30%;"></div>
+                                <div class="bar bg-color-yellow" data-bar="30" style="width: 30%;"></div>
+                                <div class="bar bg-color-green" data-bar="40" style="width: 40%;"></div>
+                            </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"progress-bar"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bar bg-color-pink"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">30</span><span class="pun">%</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bar bg-color-yellow"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">30</span><span class="pun">%</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L3"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bar bg-color-green"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">40</span><span class="pun">%</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-header" id="notice">
+            <div class="page-header-content">
+                <h1>提醒<small> 示例</small></h1>
+                <a href="index.html" class="back-button big page-back"></a>
+            </div>
+        </div>
+        <div class="page-region">
+            <div class="page-region-content">
+                <h2>回复</h2>
+                <div class="grid" style="margin-left: -25px">
+                    <div class="row">
+                        <div class="span5">
+                            <ul class="replies">
+                                <li class="bg-color-blue">
+                                    <div class="avatar"><img src="images/myface.jpg"></div>
+                                    <div class="reply">
+                                        <div class="date">01.01.2012</div>
+                                        <div class="author">影帝</div>
+                                        <div class="text">做影帝真太妈累，还好马上就要结束了。马上就要登船了！</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="span5">
+                            <ul class="replies">
+                                <li class="bg-color-pink">
+                                    <div class="avatar"><img src="images/myface.jpg"></div>
+                                    <div class="reply">
+                                        <div class="date">01.01.2012</div>
+                                        <div class="author">奥巴马</div>
+                                        <div class="text">低价出售诺亚方舟船票，10亿美金起。详询美国白宫特勤部 （10001）- 911</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"replies"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-color-*"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"avatar"</span><span class="tag">&gt;&lt;img/&gt;&lt;/div&gt;</span></li><li class="L3"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"reply"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">                </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"date"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">                </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"author"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="pln">                </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="pln">            </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">        </span><span class="tag">&lt;/li&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li><li class="L0"><span class="pln">    =========================================================</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"replies"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-color-*"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"avatar"</span><span class="tag">&gt;&lt;img/&gt;&lt;/div&gt;</span></li><li class="L4"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"reply"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">                </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"date"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="pln">                </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"author"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="pln">                </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">            </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+                <br>
+                <h2>带箭头的回复</h2>
+
+                <div class="grid">
+                    <div class="row">
+                        <div class="span5">
+                            <ul class="replies">
+                                <li class="bg-color-orange">
+                                    <b class="sticker sticker-left sticker-color-orange"></b>
+                                    <div class="avatar"><img src="images/myface.jpg"></div>
+                                    <div class="reply">
+                                        <div class="date">01.01.2012</div>
+                                        <div class="author">涛哥</div>
+                                        <div class="text">小马啊，搞完十八大就没我啥事了，我去台湾转转，你给安排一下？</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="span5">
+                            <ul class="replies">
+                                <li class="bg-color-pink">
+                                    <b class=" sticker sticker-right sticker-color-pink"></b>
+                                    <div class="avatar"><img src="images/myface.jpg"></div>
+                                    <div class="reply">
+                                        <div class="date">01.01.2012</div>
+                                        <div class="author">小马</div>
+                                        <div class="text">没问题。还有我最近刚申请了个QQ，号码是十一位的，你帮忙给我弄个短的，我和祖国人民聊聊天。</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"replies"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-color-*"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;b</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sticker sticker-left(right) sticker-color-*"</span><span class="tag">&gt;&lt;/b&gt;</span></li><li class="L3"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"avatar"</span><span class="tag">&gt;&lt;img/&gt;&lt;/div&gt;</span></li><li class="L4"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"reply"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">                </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"date"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="pln">                </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"author"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="pln">                </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">            </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;/li&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+                <br>
+                <h2>提醒</h2>
+                <div class="grid">
+                    <div class="row">
+                        <div class="span5">
+                            <div class="notices">
+                                <div class="bg-color-green">
+                                    <a href="#" class="close"></a>
+                                    <div class="notice-icon"><img src="images/lock-open.png"></div>
+                                    <div class="notice-header fg-color-white">授权通过！</div>
+                                    <div class="notice-text">欢迎进入星际之门的世界！</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span5">
+                            <div class="notices">
+                                <div class="bg-color-red">
+                                    <a href="#" class="close"></a>
+                                    <div class="notice-icon"><img src="images/shield-user.png"></div>
+                                    <div class="notice-image"><img src="images/armor.png"></div>
+                                    <div class="notice-header fg-color-yellow">保护伞中国分公司</div>
+                                    <div class="notice-text">给你的电脑360度防护!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"notices"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"bg-color-*"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">            </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"close"</span><span class="tag">&gt;&lt;/a&gt;</span></li><li class="L3"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"notice-icon"</span><span class="tag">&gt;</span><span class="pln"> </span><span class="tag">&lt;img/&gt;</span><span class="pln"> </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"notice-image"</span><span class="tag">&gt;</span><span class="pln"> </span><span class="tag">&lt;img/&gt;</span><span class="pln"> </span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"notice-header"</span><span class="tag">&gt;</span><span class="pln"> ... </span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="pln">            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"notice-text"</span><span class="tag">&gt;</span><span class="pln"> ... </span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+
+            </div>
+        </div>
+
+        <div class="header-bar">
+		    <div class="header-bar-inner bg-color-darken" style="padding: 10px 10px 5px;">
+		        <p class="tertiary-text fg-color-white">2012, Metro UI CSS © by <a class="fg-color-blueLight" href="mailto:sergey@pimenov.com.ua">Sergey Pimenov</a></p>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>
+
